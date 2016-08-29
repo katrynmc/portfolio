@@ -1,4 +1,4 @@
->Personal site to be used as a dev playground, and a portfolio for my artwork. Find it at [http://katrynmcintosh.com](http://katrynmcintosh.com)
+>Personal site to be used as a dev playground, and a portfolio for my artwork. Find it at [http://katrynmcintosh.com](http://katrynmcintosh.com), well not yet but soon.
 ---
 
 ## Ingredients
@@ -11,4 +11,6 @@
 | Webpack dev server | ^1.15.0
 
 ## Run the server
-`webpack-dev-server --progress --colors`
+`npm start`
+
+http://localhost:8080/webpack-dev-server/bundle
