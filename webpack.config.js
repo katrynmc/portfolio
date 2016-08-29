@@ -1,10 +1,10 @@
 require('es6-promise').polyfill();
 
 module.exports = {
-  entry: './entry.jsx',
+  entry: './app/entry.jsx',
   output: {
     path: __dirname,
-    filename: './bundle.js'
+    filename: 'bundle.js'
   },
   module: {
     loaders: [

@@ -7,13 +7,18 @@
 
 [http://localhost:8080/webpack-dev-server/bundle](http://localhost:8080/webpack-dev-server/bundle)
 
+## Tech
+- webpack
+- jsx
+
 ## Styling
 This project uses [Stylus](http://stylus-lang.com/) with [Nib](https://github.com/tj/nib).
 
 ## Comprehensive List of Tools and Libraries
 | Name                                                                           | Version  |
 |--------------------------------------------------------------------------------|----------|
-| React                                                                          |    -     |
+| [React](https://facebook.github.io/react/docs/getting-started.html)            | ^15.3.1  |
+| * [React-dom](https://www.npmjs.com/package/react-dom)                         | ^15.3.1  |
 | * [Babel-core](https://github.com/babel/babel/tree/master/packages/babel-core) | ^6.14.0  |
 | [Stylus](http://stylus-lang.com/)                                              | ^0.54.5  |
 | * [Nib](https://github.com/tj/nib)                                             | ^1.1.2   |
@@ -23,5 +28,5 @@ This project uses [Stylus](http://stylus-lang.com/) with [Nib](https://github.co
 | * css-loader                                                                   | ^0.23.1  |
 | * style-loader                                                                 | ^0.13.1  |
 | * [stylus-loader](https://github.com/shama/stylus-loader)                      | ^2.3.1   |
-| * es6-promise                                                                  | ^3.2.1   |
+| * [es6-promise](https://github.com/stefanpenner/es6-promise)                   | ^3.2.1   |
 | Webpack dev server                                                             | ^1.15.0  |
