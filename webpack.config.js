@@ -11,6 +11,10 @@ module.exports = {
       { test: /\.styl$/, loader: 'style!css!stylus' }
     ],
   },
+  stylus: {
+    use: [require('nib')()],
+    import: ['~nib/lib/nib/index.styl']
+  },
   resolve: {
     extensions: ['', '.js', '.styl']
   }
