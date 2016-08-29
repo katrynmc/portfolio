@@ -1,7 +1,7 @@
 require('es6-promise').polyfill();
 
 module.exports = {
-  entry: './entry.js',
+  entry: './entry.jsx',
   output: {
     path: __dirname,
     filename: './bundle.js'
@@ -13,7 +13,7 @@ module.exports = {
         loader: 'babel',
         exclude: /node_modules/,
         query: {
-          presets: ['es2015']
+          presets: ['es2015', 'react']
         }
       }
     ],
