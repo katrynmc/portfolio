@@ -5,7 +5,7 @@
 `npm install`
 `npm start`
 
-[http://localhost:8080/webpack-dev-server/bundle](http://localhost:8080/webpack-dev-server/bundle)
+[http://localhost:8080/webpack-dev-server](http://localhost:8080/webpack-dev-server)
 
 ## Tech
 - webpack
