@@ -8,7 +8,14 @@ module.exports = {
   },
   module: {
     loaders: [
-      { test: /\.styl$/, loader: 'style!css!stylus' }
+      { test: /\.styl$/, loader: 'style!css!stylus' },
+      { test: /\.jsx?$/,
+        loader: 'babel',
+        exclude: /node_modules/,
+        query: {
+          presets: ['es2015']
+        }
+      }
     ],
   },
   stylus: {
@@ -16,6 +23,6 @@ module.exports = {
     import: ['~nib/lib/nib/index.styl']
   },
   resolve: {
-    extensions: ['', '.js', '.styl']
+    extensions: ['', '.js', '.jsx', '.styl']
   }
 };
