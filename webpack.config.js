@@ -10,8 +10,8 @@ module.exports = {
     loaders: [
       { test: /\.styl$/, loader: 'style!css!stylus' },
       { test: /\.jsx?$/,
-        loader: 'babel',
-        exclude: __dirname + '/node_modules',
+        loader: 'babel-loader',
+        exclude: /node_modules/,
         query: {
           presets: ['es2015', 'react']
         }
