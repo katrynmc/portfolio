@@ -8,8 +8,11 @@
 [http://localhost:8080/webpack-dev-server](http://localhost:8080/webpack-dev-server)
 
 ## Tech
+- react
 - webpack
+- babel
 - jsx
+- Ramda
 
 ## Linting
 
@@ -29,15 +32,14 @@ This project uses [Stylus](http://stylus-lang.com/) with [Nib](https://github.co
 |   - [Babel-preset-es2015](https://babeljs.io/docs/plugins/preset-es2015/)      | ^6.14.0  |
 |   - [Babel-preset-react](https://babeljs.io/docs/plugins/preset-react/)        | ^6.11.1  |
 | * [css-loader](https://github.com/webpack/css-loader)                          | ^0.23.1  |
-| * [style-loader](https://github.com/webpack/style-loader)                        | ^0.13.1  |
+| * [style-loader](https://github.com/webpack/style-loader)                      | ^0.13.1  |
 | * [stylus-loader](https://github.com/shama/stylus-loader)                      | ^2.3.1   |
 | * [es6-promise](https://github.com/stefanpenner/es6-promise)                   | ^3.2.1   |
-| Webpack dev server                                                             | ^1.15.0  |
+| * Webpack dev server                                                           | ^1.15.0  |
+| [Ramda](http://ramdajs.com/0.21.0/)                                            | ^0.22.1  |
 
 ## Note to self
 Clone this and create react foundation repo
-post-css
-image processing
 react-router
 redux
 icons
