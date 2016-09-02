@@ -1,14 +1,39 @@
 require('es6-promise').polyfill();
+const path = require('path');
 
 module.exports = {
-  entry: './entry.js',
+  entry: './app/entry.jsx',
   output: {
-    path: __dirname,
-    filename: './bundle.js'
+    path: path.join(__dirname, 'build'),
+    publicPath: 'http://localhost:8080/',
+    filename: 'bundle.js'
   },
   module: {
     loaders: [
-      { test: /\.styl$/, loader: 'style!css!stylus' }
+      {
+        test: /\.styl$/,
+        loader: 'style!css!autoprefixer-loader!stylus'
+      },
+      {
+        test: /\.jsx?$/,
+        loader: 'babel-loader',
+        exclude: /node_modules/,
+        query: {
+          presets: ['es2015', 'react']
+        }
+      },
+      {
+        test: /\.(png|jpg)$/,
+        loader: 'file-loader?name=img/img-[hash:6].[ext]'
+      },
+      {
+        test: require.resolve('ramda'),
+        loader: 'expose?R'
+      },
+      {
+        test: require.resolve('react'),
+        loader: 'expose?React'
+      }
     ],
   },
   stylus: {
@@ -16,6 +41,6 @@ module.exports = {
     import: ['~nib/lib/nib/index.styl']
   },
   resolve: {
-    extensions: ['', '.js', '.styl']
+    extensions: ['', '.js', '.jsx', '.styl']
   }
 };
