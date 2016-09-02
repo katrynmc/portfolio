@@ -1,9 +1,11 @@
 require('es6-promise').polyfill();
+const path = require("path");
 
 module.exports = {
   entry: './app/entry.jsx',
   output: {
-    path: __dirname + '/build',
+    path: path.join(__dirname, 'build'),
+    publicPath: 'http://localhost:8080/',
     filename: 'bundle.js'
   },
   module: {
@@ -15,7 +17,8 @@ module.exports = {
         query: {
           presets: ['es2015', 'react']
         }
-      }
+      },
+      { test: /\.(png|jpg)$/, loader: "file-loader?name=img/img-[hash:6].[ext]" }
     ],
   },
   stylus: {
