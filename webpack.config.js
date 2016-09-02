@@ -1,5 +1,5 @@
 require('es6-promise').polyfill();
-const path = require("path");
+const path = require('path');
 
 module.exports = {
   entry: './app/entry.jsx',
@@ -10,15 +10,22 @@ module.exports = {
   },
   module: {
     loaders: [
-      { test: /\.styl$/, loader: 'style!css!stylus' },
-      { test: /\.jsx?$/,
+      {
+        test: /\.styl$/,
+        loader: 'style!css!autoprefixer-loader!stylus'
+      },
+      {
+        test: /\.jsx?$/,
         loader: 'babel-loader',
         exclude: /node_modules/,
         query: {
           presets: ['es2015', 'react']
         }
       },
-      { test: /\.(png|jpg)$/, loader: "file-loader?name=img/img-[hash:6].[ext]" }
+      {
+        test: /\.(png|jpg)$/,
+        loader: 'file-loader?name=img/img-[hash:6].[ext]'
+      },
     ],
   },
   stylus: {
