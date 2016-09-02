@@ -26,6 +26,14 @@ module.exports = {
         test: /\.(png|jpg)$/,
         loader: 'file-loader?name=img/img-[hash:6].[ext]'
       },
+      {
+        test: require.resolve('ramda'),
+        loader: 'expose?R'
+      },
+      {
+        test: require.resolve('react'),
+        loader: 'expose?React'
+      }
     ],
   },
   stylus: {
