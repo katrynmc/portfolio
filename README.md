@@ -1,6 +1,3 @@
->Personal site to be used as a dev playground, and a portfolio for my artwork. Find it at [http://katrynmcintosh.com](http://katrynmcintosh.com), well not yet but soon.
----
-
 ## Fire it up
 `npm install`
 `npm start`
