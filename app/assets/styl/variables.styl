@@ -1,0 +1,45 @@
+$light-grey = #f2f3f5
+$darkest-grey = #3e4142
+
+.red {
+  background-color: red
+}
+
+.yellow {
+  background-color: yellow
+}
+
+.blue {
+  background-color: blue
+}
+
+.green {
+  background-color: green
+}
+
+// Pixels (px)
+// Use for: hairline borders and general elements when creating fixed-width designs; values for CSS shadow displacement. Avoid using in @media breakpoints, as doing so reinforces the tendency to create for device dimensions, rather than where your design needs to adapt. Use rem or em instead.
+// Don’t use for: typography. (Exception: setting a base font-size in a CSS reset).
+// Percentage (%)
+// Use for: making responsive images and containers; setting height on the body in some cases.
+// Don’t use for: typography. (Exception: font-size CSS reset.)
+// em, ex
+// Use for: typography, and elements related to typography (margins, for example), with the understanding that em and ex have a subtle “gotchas” when used in complex layouts. Consider using rem as an alternative.
+// Points and picas
+// Use for: print stylesheets.
+// Don’t use for: anything else.
+// rem
+// Used as: a more robust and predictable alternative to em and ex, and employed for the same purposes, including @media query breakpoints.
+// Don’t use: if you wish to support IE8 and earlier. Or, use the unit but include a fallback (by providing an alternate measurement in a more common unit before the rem measurement) or a polyfill.
+// Viewport units (vh & vw)
+// Use for: responsive typography; “perfect” responsive containers.
+// Don’t use in: media queries, as the viewport will never attain a width of less than 100vw or a height less than 100vh: by definition, those numbers correspond to the current dimensions of the browser window, no matter how large or small the screen or device is. Be aware of the unit’s lack of support in IE8.
+// Inches (in) and Centimeters (cm)
+// Use with: print stylesheets, especially page margins
+// Don’t use for: anything else.
+// Character (ch)
+// Use when: sizing and adjusting monospaced fonts. Be aware of browser support limitations.
+// Grid (gd)
+// Use for: experimental layouts; the unit is only supported in IE10+ at this moment. Polyfills are beginning to appear, however.
+// Raw numbers
+// While almost every CSS property requires that the measurement system be specified in the declaration, a few are best used with plain integer or floating-point values. In particular, line-height and border-image should be used with raw numbers.

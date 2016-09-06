@@ -2,47 +2,129 @@
 // font-family: 'VT323', monospace;
 // font-family: 'Montserrat', sans-serif;
 
-body {
-  background-color: white;
-}
-main {
-  background-color: #f2f3f5;
+.portfolio-site {
+  position: absolute;
+  background-color: #f7f7f7
   height: 100vh
   width: 95vw
-  margin: 0 auto
+  left: 2.5vw
+  z-index: -4
 }
+
+.nav {
+  width: 100%
+  display: flex
+  flex-direction: row
+  justify-content: flex-start
+}
+
 .header {
-  background-color: #f7f7f7
-  height: 66vh
-  margin: 0 auto
-}
-.arrow {
-  color: #e88092;
-}
-.name {
-  padding-top: 115px;
-  margin-left: 97px
-  font-size: 1em;
-  color: #3e4142;
+  position: fixed
+  width: 100%
+  height: 66%
+  left: 10px
+  padding-top: 25px;
 
-  letter-spacing: 0.065em;
-  font-family: 'Montserrat', sans-serif;
+  .name {
+    font-size: 1em;
+    color: $darkest-grey;
+    letter-spacing: 0.065em;
+    font-family: 'Montserrat', sans-serif;
+    padding-left: 20px
+    text-align: left
+  }
+
+  .ellipsis {
+    width: 30px
+    display: flex
+    flex-direction: row
+    justify-content: space-around
+
+    .dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+    }
+  }
+}
+.portfolio-img {
+  position: relative
+}
+.sub-header {
+  display: flex
+  position: absolute
+  bottom: 90
+  flex-direction: row
+  height: 80%
+  align-items: flex-end
+
+  .split-screen {
+    width: 50%
+    padding-right: 35px
+    &:first-child {
+      padding-left: 4vw
+      background: none
+    }
+
+  }
+
+  .purpose {
+
+    position: relative
+    font-size: 13vw
+    line-height: 0.78
+    color: $darkest-grey
+    width: 100%
+    border-bottom: 9px solid $darkest-grey
+    margin-bottom: 34px
+
+    padding-bottom: 12px
+    text-align: right
+    font-family: 'VT323', monospace
+  }
+
+  .short-bio {
+    position: relative
+    font-size: 2vw
+    color: #3e4142;
+    line-height: 1.8
+    font-family: 'Montserrat', sans-serif;
+    @media (min-width: 800px) {
+      font-size: 1em
+    }
+  }
 }
 
-.purpose {
-  font-size: 3.6em
-  color: #84cadc
-  margin-left: 23px
-  margin-bottom: 50px
-  font-family: 'VT323', monospace
+.eye {
+  position: absolute;
+  width: 40vw;
+  height: 40vw;
+  background: rgba(251, 222, 222, 0.27);
+  border-radius: 50%;
+  top: -25vh;
+  left: 4vw;
+  z-index: -10
+  filter: blur(2px);
+  &.right {
+    left: 53vw;
+  }
+  &.middle {
+    top: 20vh
+    background: rgba(251, 251, 222, 0.27)
+    &.left {
+      background: rgba(222, 251, 235, 0.27)
+    }
+  }
+  &.bottom {
+    top: 65vh
+    background: rgba(222, 231, 251, 0.27)
+  }
 }
 
-.short-bio {
-  margin-top: 7vh
-  font-size: 0.9em
-  color: #3e4142;
-  line-height: 1.8
-  margin-left: 97px
-  width: 420px
-  font-family: 'Montserrat', sans-serif;
+footer {
+  position: fixed
+  background-color: white
+  height: 10vh
+  width: 100%
+  bottom: 0
 }

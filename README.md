@@ -12,6 +12,7 @@
 - Ramda
 
 ## Linting
+Linting is not working yet. I will come back to this.
 
 ## Styling
 This project uses [Stylus](http://stylus-lang.com/) with [Nib](https://github.com/tj/nib).
