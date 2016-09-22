@@ -49,29 +49,31 @@
 }
 .portfolio-img {
   position: relative
+  overflow: hidden
+  height: 100%
 }
+
 .sub-header {
   display: flex
-  position: absolute
-  bottom: 90
   flex-direction: row
-  height: 80%
+  height: 70%
   align-items: flex-end
 
   .split-screen {
     width: 50%
-    padding-right: 35px
+    padding-left: 35px
+    height: 150%
+
+
     &:first-child {
-      padding-left: 4vw
+      padding-left: 22vw
       background: none
     }
-
   }
 
   .purpose {
-
     position: relative
-    font-size: 13vw
+    font-size: 10vw
     line-height: 0.78
     color: $darkest-grey
     width: 100%
@@ -104,7 +106,7 @@
   top: -25vh;
   left: 4vw;
   z-index: -10
-  filter: blur(2px);
+  filter: blur(1px);
   &.right {
     left: 53vw;
   }
@@ -124,7 +126,7 @@
 footer {
   position: fixed
   background-color: white
-  height: 10vh
+  height: 2.5vw
   width: 100%
   bottom: 0
 }

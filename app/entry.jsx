@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 require('../style');
-const knitGrid = require('./assets/images/skull.jpg');
+const knitGrid = require('./assets/images/brainmoth.png');
 
 class App extends React.Component {
   render() {
@@ -17,18 +17,7 @@ class App extends React.Component {
             <div className='name'>KATRYN<br />McINTOSH</div>
           </div>
 
-          <div className='eye left'>
-          </div>
-          <div className='eye right'>
-          </div>
-          <div className='eye middle left '>
-          </div>
-          <div className='eye middle right'>
-          </div>
-          <div className='eye bottom '>
-          </div>
-          <div className='eye bottom right'>
-          </div>
+
         </div>
 
         <main>
