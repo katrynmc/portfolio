@@ -7,15 +7,21 @@ import LinkedIn from 'react-icons/lib/fa/linkedin';
 
 
 const SocialBar = ({}) => {
-  const handleTwitterIconClick = () => {
-    console.log('foo')
-  }
+
   return (
     <div className='social-wrapper'>
-      <Twitter className='social-icon' onClick={() => this.handleTwitterIconClick }/>
-      <Instagram className='social-icon' onClick={() => this.handleTwitterIconClick} />
-      <OctoFace className='social-icon' onClick={() => this.handleTwitterIconClick} />
-      <LinkedIn className='social-icon' onClick={() => this.handleTwitterIconClick} />
+      <a href='http://twitter.com/k_tryn' target='_new' >
+        <Twitter className='social-icon' />
+      </a>
+      <a href='http://instagram.com/katrynmcintosh' target='_new' >
+        <Instagram className='social-icon' />
+      </a>
+      <a href='http://github.com/katrynmc' target='_new' >
+        <OctoFace className='social-icon' />
+      </a>
+      <a href='http://linkedin.com/in/katrynmcintosh' target='_new' >
+        <LinkedIn className='social-icon' />
+      </a>
     </div>
   );
 };
