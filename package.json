@@ -25,6 +25,7 @@
     "nib": "^1.1.2",
     "ramda": "^0.22.1",
     "react": "^15.3.1",
+    "react-addons-transition-group": "^15.3.2",
     "react-dom": "^15.3.1",
     "react-icons": "^2.2.1",
     "style-loader": "^0.13.1",
