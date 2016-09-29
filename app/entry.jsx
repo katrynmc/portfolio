@@ -7,7 +7,7 @@ import NavBar from './components/nav_bar_component';
 
 const brainMoth = require('./assets/images/brainmoth.png');
 
-const App = ({ }) => {
+const App = () => {
 
   return (
     <div className='portfolio-site'>
@@ -15,16 +15,18 @@ const App = ({ }) => {
         <NavBar />
       </div>
       <main>
-        <div className='sub-header'>
-          <div className='split-screen left'>
-            <div className='short-bio' >
-              Katryn is an artist & UX engineer living in Providence, RI.
-            </div>
-          </div>
-          <div className='split-screen right'>
-            <img className='portfolio-img' src={brainMoth} />
-          </div>
+        <div className='short-bio' >
+          Katryn is an artist & UX engineer living in Providence, RI.
         </div>
+        <div className='right'>
+          <img
+            className='portfolio-img'
+            src={brainMoth}
+            srcSet={`${brainMoth} 1280w`}
+            sizes='100vw'
+            alt='Ink blot pattern that kinda looks like brains'/>
+        </div>
+
         <SocialBar />
       </main>
       <footer>

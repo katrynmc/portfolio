@@ -6,7 +6,7 @@ import Twitter from 'react-icons/lib/fa/twitter';
 import LinkedIn from 'react-icons/lib/fa/linkedin';
 
 
-const SocialBar = ({}) => {
+const SocialBar = () => {
 
   return (
     <div className='social-wrapper'>
