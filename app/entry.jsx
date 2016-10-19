@@ -6,32 +6,31 @@ import '../style';
 
 import SocialBar from './components/social_bar_component';
 import NavBar from './components/nav_bar_component';
-
+import ArtSection from './components/art_section_component';
 
 const brainMoth = require('./assets/images/brainmoth.png');
+const sketchBook = require('./assets/images/sketch1.jpg');
 
 const App = () => {
 
   return (
     <div className='portfolio-site'>
+
       <div className='header'>
         <NavBar />
       </div>
       <main>
-        <TransitionGroup>
-          <div className='short-bio' >
-            Katryn is an artist & UX engineer living in Providence, RI.
-          </div>
-        </TransitionGroup>
-        <div className='right'>
-          <img
-            className='portfolio-img'
-            src={brainMoth}
-            srcSet={`${brainMoth} 1280w`}
-            sizes='100vw'
-            alt='Ink blot pattern that kinda looks like brains'/>
+        <div className='interface'>
+          <TransitionGroup>
+            <div className='short-bio'>
+              Katryn is an artist & UX engineer living in Providence, RI.
+            </div>
+            <div className='cta'>Contact me</div>
+          </TransitionGroup>
+
         </div>
 
+        <ArtSection />
         <SocialBar />
       </main>
       <footer>
