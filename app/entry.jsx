@@ -10,6 +10,8 @@ import SocialBar from './components/social_bar_component';
 import NavBar from './components/nav_bar_component';
 import ArtSection from './components/art_section_component';
 import EngineeringSection from './components/engineering_section_component';
+
+import StyleGuide from './components/style_guide_component.jsx';
 import Home from './components/home_component';
 
 const brainMoth = require('./assets/images/brainmoth.png');
@@ -28,7 +30,7 @@ const App = React.createClass({
           </div>
           <SocialBar />
         </main>
-        <footer></footer>
+        <Link to='/style'>Style</Link>
       </div>
     );
   }
@@ -40,6 +42,7 @@ ReactDOM.render((
       <IndexRoute component={Home} />
       <Route path="art" component={ArtSection} />
       <Route path="engineering" component={EngineeringSection} />
+      <Route path="style" component={StyleGuide} />
     </Route>
   </Router>
 ), document.getElementById('app'));
