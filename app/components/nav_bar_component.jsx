@@ -1,12 +1,12 @@
 import React from 'react';
-import Square from 'react-icons/lib/go/primitive-square';
+import { Link } from 'react-router'
 
 const NavBar = () => {
   return (
     <div className='nav'>
-      <div className='name'>KATRYN<br />McINTOSH</div>
-      <div className='section art'>artist</div>
-      <div className='section'>software engineer</div>
+      <div className='name'><Link to="/">KATRYN<br />McINTOSH</Link></div>
+      <div className='section art'><Link to="/art">art</Link></div>
+      <div className='section'><Link to="/engineering">engineering</Link></div>
     </div>
   );
 };
