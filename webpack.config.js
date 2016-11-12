@@ -8,6 +8,12 @@ module.exports = {
     publicPath: 'http://localhost:8080/',
     filename: 'bundle.js'
   },
+  devServer: {
+    inline: true,
+    port: 8080
+  },
+  devtool: env.prod ? 'source-map' : 'eval',
+  bail: env.prod,
   module: {
     loaders: [
       {
