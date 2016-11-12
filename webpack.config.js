@@ -1,7 +1,14 @@
 require('es6-promise').polyfill();
 const path = require('path');
+const Webpack = require('webpack');
+const validate = require('webpack-validator')
+const Joi = require('webpack-validator').Joi;
 
-module.exports = {
+const yourSchemaExtension = Joi.object({
+  // this would just allow the property and doesn't perform any additional validation
+  stylus: Joi.any()
+})
+const config = {
   entry: './app/entry.jsx',
   output: {
     path: path.join(__dirname, 'build'),
@@ -12,8 +19,6 @@ module.exports = {
     inline: true,
     port: 8080
   },
-  devtool: env.prod ? 'source-map' : 'eval',
-  bail: env.prod,
   module: {
     loaders: [
       {
@@ -46,7 +51,14 @@ module.exports = {
     use: [require('nib')()],
     import: ['~nib/lib/nib/index.styl']
   },
+  plugins: [
+    new Webpack.EnvironmentPlugin([
+      "NODE_ENV"
+    ])
+  ],
   resolve: {
     extensions: ['', '.js', '.jsx', '.styl']
   }
 };
+
+module.exports = validate(config, { schemaExtension: yourSchemaExtension });
