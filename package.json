@@ -8,7 +8,7 @@
     "test:lint": "eslint app/** --ext .js --ext .jsx --ignore-path .gitignore --cache",
     "start": "webpack-dev-server --env.dev --progress --colors",
     "validate-webpack:dev": "webpack-validator webpack.config.js --env.dev",
-    "postinstall": "node deploy",
+
     "build": "webpack --env.dev",
     "build:prod": "webpack --env.prod -p"
   },
