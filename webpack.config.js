@@ -1,24 +1,27 @@
 require('es6-promise').polyfill();
 const path = require('path');
-const Webpack = require('webpack');
+const webpack = require('webpack');
 const validate = require('webpack-validator')
 const Joi = require('webpack-validator').Joi;
 
 const yourSchemaExtension = Joi.object({
-  // this would just allow the property and doesn't perform any additional validation
   stylus: Joi.any()
 })
+
 const config = {
-  entry: './app/entry.jsx',
+  devtool: 'eval',
+
+  entry: [
+    'webpack-hot-middleware/client',
+    './app/entry'
+  ],
+
   output: {
-    path: path.join(__dirname, 'build'),
-    publicPath: 'http://localhost:8080/',
+    path: path.join(__dirname, 'public'),
+    publicPath: '/public/',
     filename: 'bundle.js'
   },
-  devServer: {
-    inline: true,
-    port: 8080
-  },
+
   module: {
     loaders: [
       {
@@ -47,14 +50,18 @@ const config = {
       }
     ],
   },
+
   stylus: {
     use: [require('nib')()],
     import: ['~nib/lib/nib/index.styl']
   },
   plugins: [
-    new Webpack.EnvironmentPlugin([
-      "NODE_ENV"
-    ])
+    // Webpack 1.0
+    new webpack.optimize.OccurenceOrderPlugin(),
+    // Webpack 2.0 fixed this mispelling
+    // new webpack.optimize.OccurrenceOrderPlugin(),
+    new webpack.HotModuleReplacementPlugin(),
+    new webpack.NoErrorsPlugin()
   ],
   resolve: {
     extensions: ['', '.js', '.jsx', '.styl']

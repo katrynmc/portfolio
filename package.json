@@ -6,11 +6,10 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "test:lint": "eslint app/** --ext .js --ext .jsx --ignore-path .gitignore --cache",
-    "start": "webpack-dev-server --env.dev --progress --colors",
+    "start": "node app.js",
     "validate-webpack:dev": "webpack-validator webpack.config.js --env.dev",
-
-    "build": "webpack --env.dev",
-    "build:prod": "webpack --env.prod -p"
+    "validate-webpack:prod": "webpack-validator webpack.production.config.js --env.prod",
+    "build": "NODE_ENV=production webpack --config ./webpack.production.config.js --progress --colors"
   },
   "keywords": [
     "react",
@@ -25,6 +24,7 @@
     "babel-preset-react": "^6.11.1",
     "css-loader": "^0.23.1",
     "es6-promise": "^3.2.1",
+    "express": "^4.14.0",
     "material-design-icons": "^3.0.1",
     "nib": "^1.1.2",
     "ramda": "^0.22.1",
@@ -47,7 +47,9 @@
     "file-loader": "^0.9.0",
     "url-loader": "^0.5.7",
     "webpack": "^1.13.2",
+    "webpack-dev-middleware": "^1.8.4",
     "webpack-dev-server": "^1.15.0",
+    "webpack-hot-middleware": "^2.13.2",
     "webpack-validator": "^2.2.9"
   }
 }

@@ -1,15 +1,20 @@
 require('es6-promise').polyfill();
 const path = require('path');
-var Webpack = require('webpack');
+const webpack = require('webpack');
 
 module.exports = {
   devtool: 'source-map',
-  entry: './app/entry.jsx',
+
+  entry: [
+    './app/entry'
+  ],
+
   output: {
-    path: path.join(__dirname, 'build'),
-    publicPath: '/assets/',
+    path: path.join(__dirname, 'public'),
+    publicPath: '/public/',
     filename: 'bundle.js'
   },
+
   module: {
     loaders: [
       {
@@ -38,15 +43,27 @@ module.exports = {
       }
     ],
   },
+
   stylus: {
     use: [require('nib')()],
     import: ['~nib/lib/nib/index.styl']
   },
+
   plugins: [
-    new Webpack.EnvironmentPlugin([
-      "NODE_ENV"
-    ])
+    new webpack.optimize.DedupePlugin(),
+    new webpack.optimize.UglifyJsPlugin({
+      minimize: true,
+      compress: {
+        warnings: false
+      }
+    }),
+    new webpack.DefinePlugin({
+      'process.env': {
+        'NODE_ENV': JSON.stringify('production')
+      }
+    })
   ],
+
   resolve: {
     extensions: ['', '.js', '.jsx', '.styl']
   }
