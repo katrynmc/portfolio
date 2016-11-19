@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "test:lint": "eslint app/** --ext .js --ext .jsx --ignore-path .gitignore --cache",
-    "start": "node app.js",
+    "start": "NODE_ENV=production node app.js",
     "dev": "NODE_ENV=development node app.js",
     "validate-webpack:dev": "webpack-validator webpack.config.js --env.dev",
     "validate-webpack:prod": "webpack-validator webpack.production.config.js --env.prod",

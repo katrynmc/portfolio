@@ -31,6 +31,28 @@ if (process.env.NODE_ENV !== 'production') {
 
   app.use(webpackHotMiddleware(compiler))
 }
+else {
+  const config = require('./webpack.production.config.js')
+  const compiler = webpack(config)
+
+  app.use(webpackDevMiddleware(compiler, {
+    noInfo: false,
+    quiet: false,
+    lazy: false,
+    watchOptions: {
+      aggregateTimeout: 300,
+      poll: true
+    },
+    stats: {
+        colors: true
+    },
+    reporter: null,
+    publicPath: config.output.publicPath
+  }))
+
+  app.use(webpackHotMiddleware(compiler))
+
+}
 
 app.listen(port)
 console.log(`Listening at http://localhost:${port}`)
