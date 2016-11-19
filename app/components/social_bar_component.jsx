@@ -10,7 +10,7 @@ const SocialBar = () => {
 
   return (
     <div className='social-wrapper'>
-      <a href='http://twitter.com/k_tryn' target='_new' >
+      <a href='http://twitter.com/katrynmcintosh' target='_new' >
         <Twitter className='social-icon' />
       </a>
       <a href='http://instagram.com/katrynmcintosh' target='_new' >
