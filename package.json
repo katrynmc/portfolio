@@ -7,6 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "test:lint": "eslint app/** --ext .js --ext .jsx --ignore-path .gitignore --cache",
     "start": "node app.js",
+    "dev": "NODE_ENV=development node app.js",
     "validate-webpack:dev": "webpack-validator webpack.config.js --env.dev",
     "validate-webpack:prod": "webpack-validator webpack.production.config.js --env.prod",
     "build": "NODE_ENV=production webpack --config ./webpack.production.config.js --progress --colors"
@@ -49,7 +50,6 @@
     "webpack": "^1.13.2",
     "webpack-dev-middleware": "^1.8.4",
     "webpack-dev-server": "^1.15.0",
-    "webpack-hot-middleware": "^2.13.2",
-    "webpack-validator": "^2.2.9"
+    "webpack-hot-middleware": "^2.13.2"
   }
 }
