@@ -15,10 +15,8 @@ const Home = () => {
         </div>
       </div>
       <div className='footer'>
-        <div className='city'>Providence</div>
-
-          <a href='mailto:katryn.mcintosh@gmail.com'>Contact me</a>
-
+        <div className='city'>Based in Providence, RI</div>
+          <a className='email' href='mailto:katryn.mcintosh@gmail.com'>Contact me</a>
       </div>
     </div>
   );
