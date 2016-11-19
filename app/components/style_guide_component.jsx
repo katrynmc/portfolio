@@ -2,7 +2,7 @@ import React from 'react';
 
 const StyleGuide = () => {
   return (
-    <div>
+    <div className='gallery-wrapper'>
       <div>Style Guide</div>
       <h1>Heading 1</h1>
       <h2>Heading 2</h2>

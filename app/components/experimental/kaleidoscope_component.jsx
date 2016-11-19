@@ -2,10 +2,9 @@ import React from 'react';
 
 const brainMoth = require('../assets/images/brainmoth.png');
 const img = <img id='source' src={brainMoth} />;
+
 const Kaleidoscope = React.createClass({
-
   componentDidMount: function() {
-
     const canvas = document.getElementById('canvas');
 
     if (canvas.getContext) {

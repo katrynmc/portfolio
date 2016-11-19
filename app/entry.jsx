@@ -1,21 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import TransitionGroup from 'react-addons-transition-group';
 
 import { IndexRoute, Router, Route, Link, browserHistory } from 'react-router';
 
 import '../style';
 
-import SocialBar from './components/social_bar_component';
-import NavBar from './components/nav_bar_component';
-import ArtSection from './components/art_section_component';
-import EngineeringSection from './components/engineering_section_component';
+import SocialBar from './components/widgets/social_bar_component';
+import NavBar from './components/widgets/nav_bar_component';
+import ArtSection from './components/art/art_section_component';
+import EngineeringSection from './components/engineering/engineering_section_component';
+import AboutSection from './components/about/about_section_component';
 
 import StyleGuide from './components/style_guide_component.jsx';
-import Home from './components/home_component';
-
-const brainMoth = require('./assets/images/brainmoth.png');
-const sketchBook = require('./assets/images/sketch1.jpg');
+import Home from './components/home/home_component';
 
 const App = React.createClass({
   render() {
@@ -30,7 +27,6 @@ const App = React.createClass({
           </div>
           <SocialBar />
         </main>
-        <Link to='/style'>Style</Link>
       </div>
     );
   }
@@ -40,6 +36,7 @@ ReactDOM.render((
   <Router history={browserHistory}>
     <Route path="/" component={App}>
       <IndexRoute component={Home} />
+      <Route path="about" component={AboutSection} />
       <Route path="art" component={ArtSection} />
       <Route path="engineering" component={EngineeringSection} />
       <Route path="style" component={StyleGuide} />

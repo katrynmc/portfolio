@@ -1,14 +1,8 @@
 require('es6-promise').polyfill();
 const path = require('path');
 const webpack = require('webpack');
-const validate = require('webpack-validator')
-const Joi = require('webpack-validator').Joi;
 
-const yourSchemaExtension = Joi.object({
-  stylus: Joi.any()
-})
-
-const config = {
+module.exports = {
   devtool: 'eval',
 
   entry: [
@@ -40,14 +34,6 @@ const config = {
         test: /\.(png|jpg)$/,
         loader: 'file-loader?name=img/img-[hash:6].[ext]'
       },
-      {
-        test: require.resolve('ramda'),
-        loader: 'expose?R'
-      },
-      {
-        test: require.resolve('react'),
-        loader: 'expose?React'
-      }
     ],
   },
 
@@ -67,5 +53,3 @@ const config = {
     extensions: ['', '.js', '.jsx', '.styl']
   }
 };
-
-module.exports = validate(config, { schemaExtension: yourSchemaExtension });

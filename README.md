@@ -1,4 +1,4 @@
-## Fire it up
+## Start local server
 `npm install`
 `npm start`
 
@@ -6,6 +6,7 @@
 
 ## Tech
 - react
+- react-router
 - webpack
 - babel
 - jsx
@@ -38,6 +39,3 @@ This project uses [Stylus](http://stylus-lang.com/) with [Nib](https://github.co
 
 ## Note to self
 Clone this and create react foundation repo
-react-router
-redux
-icons

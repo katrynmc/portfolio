@@ -5,7 +5,6 @@ import Instagram from 'react-icons/lib/fa/instagram';
 import Twitter from 'react-icons/lib/fa/twitter';
 import LinkedIn from 'react-icons/lib/fa/linkedin';
 
-
 const SocialBar = () => {
 
   return (
