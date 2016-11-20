@@ -1,28 +1,58 @@
+$keyframe-name = fadein
+
 .left-half {
-  height: 40vh
+  height: 36vh
   display: block
   font-family: 'Source Code Pro', monospace;
   font-size: 3.5em
-  color: #d8bbc4
+  color: #56708c
   text-align: center
   padding-top: 20vh
-  background-color: #e69e9e
+  background-color: #e8e5e5
+  transition: background-color 0.4s
+  border-left: 7px solid rgba(129, 117, 243, 0.29)
+  border-top: 7px solid rgba(117, 185, 243, 0.29)
+  border-right: 7px solid #4d5867
+
+
+  &:hover {
+    background-color: #dfe0ea;
+    ::after {
+      content: 'art art art art art'
+    }
+  }
 }
 
 .container {
   display: inline-block
   width: 49%
+  background-color: #4d5867
 }
 
 .right-half {
-  height: 40vh
+  height: 36vh
   font-size: 3.5em
   font-family: 'Source Code Pro', monospace;
   display: block
   padding-top: 20vh
   color: #e69e9e
   text-align: center
-  background-color: #d8bbc4
+  background-color: #e8dada
+  transition: background-color 0.4s;
+  border-left: 7px solid rgba(253, 158, 158, 0.29)
+  border-right: 7px solid #4d5867
+
+  border-top: 7px solid rgba(200, 117, 243, 0.29)
+  &:hover {
+    background-color: #e2c7cf
+  }
+
+  @keyframes {$keyframe-name} {
+    for i in 0..10 {
+      {10% * i}
+        opacity (i/10)
+    }
+  }
 }
 
 .pull-right {
@@ -31,14 +61,18 @@
 
 .short-bio {
   position: relative
-  background-color: $darkest-grey
+  background-color: #4d5867
   color: #f7f7f7
   display: inline-block
   font-family: 'Source Code Pro', monospace;
   line-height: 1.5
   padding: 5px 15px
+  transition: background-color 0.4s;
   a {
     color: white;
+  }
+  &:hover {
+    background-color: $darkest-grey
   }
 }
 
@@ -53,7 +87,7 @@
 }
 
 .interface {
-  height: 96vh
+  height: 89vh
   padding-top: 70px;
   width: 100%
 }
