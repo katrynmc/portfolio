@@ -5,6 +5,8 @@ import { IndexRoute, Router, Route, Link, browserHistory } from 'react-router';
 
 import '../style';
 
+import Fave from 'react-icons/lib/md/favorite';
+
 import SocialBar from './components/widgets/social_bar_component';
 import NavBar from './components/widgets/nav_bar_component';
 import ArtSection from './components/art/art_section_component';
@@ -27,6 +29,10 @@ const App = React.createClass({
           </div>
           <SocialBar />
         </main>
+        <div className='footer'>
+          <div className='city'>Providence, RI <Fave className='sparkle' /></div>
+          <a className='email' href='mailto:katryn.mcintosh@gmail.com'>Contact me</a>
+        </div>
       </div>
     );
   }
