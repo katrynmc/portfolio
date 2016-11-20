@@ -16,7 +16,6 @@ const Home = () => {
           <div className='short-bio'><a href='http://upserve.com'>@ Upserve</a></div>
         </div>
       </div>
-      </div>
     </div>
   );
 }
