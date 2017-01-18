@@ -1,136 +1,98 @@
-$keyframe-name = fadein
-
-.left-half {
-  height: 36vh
-  display: block
-  font-family: 'Source Code Pro', monospace;
-  font-size: 3.5em
-  color: #56708c
-  text-align: center
-  padding-top: 20vh
-  background-color: #e8e5e5
-  transition: background-color 0.4s
-
-  &:hover {
-    background-color: #dfe0ea;
-  }
-}
-.cursor-row {
-  height: 2em
-  display: block
-  font-family: 'Source Code Pro', monospace;
-  font-size: 1em
-  color: #56708c
-  background-color: #e8e5e5
-  transition: background-color 0.4s
-
-
-
-}
-.cursor {
-
-}
-.container {
-  border-top: 25px solid #4d5867
-  display: inline-block
-  width: 49%
-  background-color: #4d5867
-}
-
-.right-half {
-  height: 36vh
-  font-size: 3.5em
-  font-family: 'Source Code Pro', monospace;
-  display: block
-  padding-top: 20vh
-  color: #e69e9e
-  text-align: center
-  background-color: #e8dada
-  transition: background-color 0.4s;
-
-  &:hover {
-    background-color: #e2c7cf
+.home {
+  .container-left {
+    position: absolute
+    z-index: -2
+    background-color: #cc99cc
+    width: 50vw
+    height: 100%
+    float: left
+    box-shadow: inset 4px 6px 10px 0px rgba(0,0,0,0.37)
   }
 
-  @keyframes {$keyframe-name} {
-    for i in 0..10 {
-      {10% * i}
-        opacity (i/10)
+  .container-right {
+    position: absolute
+    z-index: -2
+    right: 0
+    width: 50vw
+    height: 100%
+    background-color: #c1c0c0
+    box-shadow: inset 0px 4px 10px 0px rgba(0,0,0,0.37)
+  }
+
+  .background-triangle {
+    position: absolute
+    z-index: -1
+    top: 0
+    width: 0
+    height: 0
+    border-bottom: 100vh solid rgba(255, 205, 153, 0.25)
+    border-right: 88vh solid transparent
+
+    &.left {
+      border-right: 0
+      z-index: -1
+      border-left: 88vh solid transparent
+      border-bottom: 100vh solid rgba(153, 255, 246, 0.25)
     }
   }
-}
 
-.pull-right {
-  float: right
-}
-
-.short-bio {
-  position: relative
-  background-color: #4d5867
-  color: #f7f7f7
-  display: inline-block
-  font-family: 'Source Code Pro', monospace;
-  line-height: 1.5
-  padding: 5px 15px
-  transition: background-color 0.4s;
-  a {
-    color: white;
+  .faces {
+    fixed: bottom
+    right: 50vw
+    margin-right: 3px
   }
-  &:hover {
-    background-color: $darkest-grey
+
+  .face {
+    position: relative
+    float: right
+    width: 33%
+
+    &.two {
+      left: 100px
+    }
+    &.three {
+      left: 13.5vw
+    }
   }
-}
 
-.cta{
-  display: block
-  background-color: #9977bd
-  color: #f7f7f7
-  display: inline-block
-  font-family: 'Source Code Pro', monospace;
-  line-height: 1.5
-  padding: 5px 15px
-}
+  .profession {
+    color: $white
+    font-size: 4.3em
+    font-family: 'Roboto', sans-serif
+    font-weight: 100;
+    margin-left: 1em
+    line-height: 1.2
 
-.interface {
-  height: 89vh
-  padding-top: 70px;
-  width: 100%
-}
+    &.art {
+      margin-top: 45px
+    }
+  }
 
-.home-eyes {
-  position: absolute
-}
+  .main-card {
+    position: relative
+    height: 40vh
+    width: 35vw
+    margin-top: 20vh
+    margin-right: 3px
+    float: right
+  }
 
-.home-sketch {
-  position: absolute
-  left: 465px;
-}
+  .bio {
+    position: relative
+    height: 40vh
+    width: 30vw
+    margin-top: 310px
+    font-family: 'Roboto', sans-serif
+    color: $darkest-grey
+    font-size: 1em
+    line-height: 2
+    margin-left: 35px
+  }
 
-.portfolio-img {
-  position: absolute
-  right: 70px
-  margin: 70px 20px 0 0
-  padding: 0 10px 30px 10px
-}
-
-.second-layer {
-  margin-top: 600px
-}
-
-.example-enter {
-  opacity: 0.01;
-}
-
-.example-enter.example-enter-active {
-  opacity: 1;
-  transition: opacity 500ms ease-in;
-}
-
-.example-leave {
-  opacity: 1;
-}
-
-.example-leave.example-leave-active {
-  opacity: 0.01;
-  transition: opacity 300ms ease-in;
+  .container {
+    border-top: 25px solid #4d5867
+    display: inline-block
+    width: 49%
+    background-color: #4d5867
+  }
 }

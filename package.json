@@ -28,6 +28,7 @@
     "express": "^4.14.0",
     "material-design-icons": "^3.0.1",
     "nib": "^1.1.2",
+    "p5": "^0.5.4",
     "ramda": "^0.22.1",
     "react": "^15.3.1",
     "react-addons-transition-group": "^15.3.2",

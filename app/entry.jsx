@@ -9,7 +9,7 @@ import Fave from 'react-icons/lib/md/favorite';
 
 import SocialBar from './components/widgets/social_bar_component';
 import NavBar from './components/widgets/nav_bar_component';
-import ArtSection from './components/art/art_section_component';
+
 import EngineeringSection from './components/engineering/engineering_section_component';
 import AboutSection from './components/about/about_section_component';
 
@@ -30,8 +30,8 @@ const App = React.createClass({
           <SocialBar />
         </main>
         <div className='footer'>
-          <div className='city'>Providence, RI <Fave className='sparkle' /></div>
-          <a className='email' href='mailto:katryn.mcintosh@gmail.com'>Contact me</a>
+          <div className='city'>PROVIDENCE, RI <Fave className='sparkle' /></div>
+          <a className='email' href='mailto:katryn.mcintosh@gmail.com'>CONTACT ME</a>
         </div>
       </div>
     );
@@ -43,9 +43,11 @@ ReactDOM.render((
     <Route path="/" component={App}>
       <IndexRoute component={Home} />
       <Route path="about" component={AboutSection} />
-      <Route path="art" component={ArtSection} />
+
       <Route path="engineering" component={EngineeringSection} />
       <Route path="style" component={StyleGuide} />
     </Route>
   </Router>
 ), document.getElementById('app'));
+
+

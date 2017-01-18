@@ -1,5 +1,6 @@
 ## Start local server
 `npm install`
+`npm run build`
 `npm start`
 
 [http://localhost:8080/webpack-dev-server](http://localhost:8080/webpack-dev-server)
