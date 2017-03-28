@@ -20,9 +20,7 @@ const App = React.createClass({
   render() {
     return (
       <div className='portfolio-site'>
-        <div className='header'>
-          <NavBar />
-        </div>
+        <NavBar />
         <main>
           <div className='interface'>
             {this.props.children}
@@ -30,8 +28,7 @@ const App = React.createClass({
           <SocialBar />
         </main>
         <div className='footer'>
-          <div className='city'>PROVIDENCE, RI <Fave className='sparkle' /></div>
-          <a className='email' href='mailto:katryn.mcintosh@gmail.com'>CONTACT ME</a>
+          <a className='email' href='mailto:katryn.mcintosh@gmail.com'><Fave className='sparkle' /><Fave className='sparkle' /><br />CONTACT ME</a>
         </div>
       </div>
     );
