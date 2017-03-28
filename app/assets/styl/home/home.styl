@@ -1,39 +1,28 @@
 .home {
+  box-shadow: inset 0 3px 14px 0 rgba(0,0,0,0.19)
+  height: 100vh
+  .hero {
+    padding-top: 60px
+    padding-left: 30px
+  }
   .container-left {
     position: absolute
     z-index: -2
-    background-color: #cc99cc
+    background-color: #f7f7f7
     width: 50vw
     height: 100%
     float: left
-    box-shadow: inset 4px 6px 10px 0px rgba(0,0,0,0.37)
   }
 
   .container-right {
     position: absolute
     z-index: -2
+
     right: 0
     width: 50vw
     height: 100%
-    background-color: #c1c0c0
-    box-shadow: inset 0px 4px 10px 0px rgba(0,0,0,0.37)
-  }
+    background-color: #f7f7f7
 
-  .background-triangle {
-    position: absolute
-    z-index: -1
-    top: 0
-    width: 0
-    height: 0
-    border-bottom: 100vh solid rgba(255, 255, 255, 0.25)
-    border-right: 88vh solid transparent
-
-    &.left {
-      border-right: 0
-      z-index: -1
-      border-left: 88vh solid transparent
-      border-bottom: 100vh solid rgba(153, 255, 246, 0.25)
-    }
   }
 
   .faces {
@@ -56,15 +45,18 @@
   }
 
   .profession {
-    color: $white
+    color: #ffbde2
     font-size: 4.3em
-    font-family: 'Roboto', sans-serif
-    font-weight: 100;
-    margin-left: 1em
+    font-family: 'Open Sans', sans-serif
     line-height: 1.2
+    margin-left: -6px
+    padding-top: 73px
+    font-weight: 600
+    font-style: italic
 
-    &.art {
-      margin-top: 45px
+    &:last-of-type {
+      padding-top: 0
+      margin-bottom: 100px
     }
   }
 
@@ -72,21 +64,21 @@
     position: relative
     height: 40vh
     width: 35vw
-    margin-top: 20vh
+    margin-top: 31vh
     margin-right: 3px
     float: right
   }
 
   .bio {
     position: relative
-    height: 40vh
-    width: 30vw
-    margin-top: 310px
-    font-family: 'Roboto', sans-serif
+
+    width: 33vw
+
+    font-family: 'Amiri', serif
     color: $darkest-grey
     font-size: 1em
     line-height: 2
-    margin-left: 35px
+    margin-left: 111px
   }
 
   .container {
