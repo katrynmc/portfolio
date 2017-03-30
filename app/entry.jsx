@@ -5,10 +5,9 @@ import { IndexRoute, Router, Route, Link, browserHistory } from 'react-router';
 
 import '../style';
 
-import Fave from 'react-icons/lib/md/favorite';
-
 import SocialBar from './components/widgets/social_bar_component';
 import NavBar from './components/widgets/nav_bar_component';
+import Footer from './components/widgets/footer_component';
 
 import EngineeringSection from './components/engineering/engineering_section_component';
 import AboutSection from './components/about/about_section_component';
@@ -27,9 +26,7 @@ const App = React.createClass({
           </div>
           <SocialBar />
         </main>
-        <div className='footer'>
-          <a className='email' href='mailto:katryn.mcintosh@gmail.com'><Fave className='sparkle' /><Fave className='sparkle' /><br />CONTACT ME</a>
-        </div>
+        <Footer />
       </div>
     );
   }
@@ -40,11 +37,8 @@ ReactDOM.render((
     <Route path="/" component={App}>
       <IndexRoute component={Home} />
       <Route path="about" component={AboutSection} />
-
       <Route path="engineering" component={EngineeringSection} />
       <Route path="style" component={StyleGuide} />
     </Route>
   </Router>
 ), document.getElementById('app'));
-
-

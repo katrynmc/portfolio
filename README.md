@@ -40,3 +40,5 @@ This project uses [Stylus](http://stylus-lang.com/) with [Nib](https://github.co
 
 ## Note to self
 Clone this and create react foundation repo
+Convert to Yarn
+Hot reloading
