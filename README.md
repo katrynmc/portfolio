@@ -1,20 +1,10 @@
 ## Start local server
 `npm install`
-`npm run build`
-`npm start`
 
-[http://localhost:8080/webpack-dev-server](http://localhost:8080/webpack-dev-server)
+DEV: `npm start-dev`
+Create assets for Prod: `npm run build`
 
-## Tech
-- react
-- react-router
-- webpack
-- babel
-- jsx
-- Ramda
-
-## Linting
-Linting is not working yet. I will come back to this.
+[http://localhost:8080/](http://localhost:8080/)
 
 ## Styling
 This project uses [Stylus](http://stylus-lang.com/) with [Nib](https://github.com/tj/nib).
@@ -27,7 +17,8 @@ This project uses [Stylus](http://stylus-lang.com/) with [Nib](https://github.co
 | * [Babel-core](https://github.com/babel/babel/tree/master/packages/babel-core) | ^6.14.0  |
 | [Stylus](http://stylus-lang.com/)                                              | ^0.54.5  |
 | * [Nib](https://github.com/tj/nib)                                             | ^1.1.2   |
-| [Webpack](http://webpack.github.io/docs/)                                      | ^1.13.2  |
+| [Webpack](http://webpack.github.io/docs/)                                      | ^2.3.3
+|
 | * [Babel-loader](https://github.com/babel/babel-loader)                        | ^6.2.5   |
 |   - [Babel-preset-es2015](https://babeljs.io/docs/plugins/preset-es2015/)      | ^6.14.0  |
 |   - [Babel-preset-react](https://babeljs.io/docs/plugins/preset-react/)        | ^6.11.1  |
@@ -41,4 +32,3 @@ This project uses [Stylus](http://stylus-lang.com/) with [Nib](https://github.co
 ## Note to self
 Clone this and create react foundation repo
 Convert to Yarn
-Hot reloading
