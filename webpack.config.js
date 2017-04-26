@@ -1,32 +1,31 @@
-require('es6-promise').polyfill();
 const path = require('path');
 const webpack = require('webpack');
 
 module.exports = {
-  devtool: 'eval',
-
   entry: [
-    'webpack-hot-middleware/client',
+    // 'webpack-hot-middleware/client',
     './app/entry'
   ],
 
   output: {
-    path: path.join(__dirname, 'public'),
+    path: path.resolve(__dirname, 'public'),
+    // the target directory for all output files
+    // must be an absolute path (use the Node.js path module)
     publicPath: '/public/',
+    // the url to the output directory resolved relative to the HTML page
     filename: 'bundle.js'
+    // the filename template for entry chunks
   },
 
   module: {
-    loaders: [
-      {
-        test: /\.styl$/,
-        loader: 'style!css!autoprefixer-loader!stylus'
-      },
+    rules: [
       {
         test: /\.jsx?$/,
         loader: 'babel-loader',
-        exclude: /node_modules/,
-        query: {
+        include: [
+          path.resolve(__dirname, 'app')
+        ],
+        options: {
           presets: ['es2015', 'react']
         }
       },
@@ -34,23 +33,42 @@ module.exports = {
         test: /\.(png|jpg)$/,
         loader: 'file-loader?name=img/img-[hash:6].[ext]'
       },
+      {
+        test: /\.styl$/,
+        use: [
+          {
+            loader: 'style-loader'
+          },
+          {
+            loader: 'css-loader'
+          },
+          {
+            loader: 'autoprefixer-loader'
+          },
+          {
+            loader: 'stylus-loader',
+            options: {
+              use: [require('nib')()],
+              import: ['~nib/lib/nib/index.styl']
+            }
+          },
+        ],
+      }
     ],
   },
-
-  stylus: {
-    use: [require('nib')()],
-    import: ['~nib/lib/nib/index.styl'],
-    preferPathResolver: 'webpack'
+  devtool: 'source-map',
+  watch: true,
+  devServer: {
+    contentBase: [ './public'],
+    port: '8080',
+    inline: true,
+    overlay: true,
+    hot: true
   },
-  plugins: [
-    // Webpack 1.0
-    new webpack.optimize.OccurenceOrderPlugin(),
-    // Webpack 2.0 fixed this mispelling
-    // new webpack.optimize.OccurrenceOrderPlugin(),
-    new webpack.HotModuleReplacementPlugin(),
-    new webpack.NoErrorsPlugin()
-  ],
   resolve: {
-    extensions: ['', '.js', '.jsx', '.styl']
+    extensions: ['.js', '.jsx', '.styl'],
+    alias: {
+      Images: path.resolve(__dirname, 'app/assets/images/')
+    }
   }
 };
