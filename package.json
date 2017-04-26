@@ -4,7 +4,8 @@
   "description": "A portfolio site of art and a front end development showpiece.",
   "main": "index.js",
   "scripts": {
-    "start": "node_modules/.bin/webpack-dev-server --hot --inline --open",
+    "start": "NODE_ENV=production node app.js",
+    "start-dev": "node_modules/.bin/webpack-dev-server --hot --inline --open",
     "build": "./node_modules/.bin/webpack --config webpack.config.js"
   },
   "keywords": [
