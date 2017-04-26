@@ -1,10 +1,7 @@
-require('es6-promise').polyfill();
 const path = require('path');
 const webpack = require('webpack');
 
 module.exports = {
-  devtool: 'source-map',
-
   entry: [
     './app/entry'
   ],
@@ -12,7 +9,7 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, 'public'),
     publicPath: '/public/',
-    filename: '[name].[chunkhash].js'
+    filename: 'bundle.js'
   },
 
   module: {
@@ -54,21 +51,8 @@ module.exports = {
       }
     ]
   },
-  plugins: [
-    new webpack.optimize.CommonsChunkPlugin({
-      name: 'vendor',
-      minChunks: function (module) {
-         // this assumes your vendor imports exist in the node_modules directory
-         return module.context && module.context.indexOf('node_modules') !== -1;
-      },
-    }),
-      // CommonChunksPlugin will now extract all the common modules from vendor and main bundles
-      // But since there are no more common modules between them we end up with just the runtime code included in the manifest file
-    new webpack.optimize.CommonsChunkPlugin({
-      name: 'manifest',
-      minChunks: Infinity
-    }),
 
+  plugins: [
     new webpack.optimize.UglifyJsPlugin({
       minimize: true,
       compress: {
