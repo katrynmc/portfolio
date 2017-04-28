@@ -1,8 +1,8 @@
 ## Start local server
-`npm install`
+`yarn install`
 
-DEV: `npm start-dev`
-Create assets for Prod: `npm run build`
+DEV: `yarn start-dev`
+Create assets for Prod: `yarn run build`
 
 [http://localhost:8080/](http://localhost:8080/)
 
@@ -31,4 +31,3 @@ This project uses [Stylus](http://stylus-lang.com/) with [Nib](https://github.co
 
 ## Note to self
 Clone this and create react foundation repo
-Convert to Yarn
