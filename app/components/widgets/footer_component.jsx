@@ -6,8 +6,7 @@ const Footer = () => {
   return (
     <div className='footer'>
       <Heart className='sparkle' />
-      <Heart className='sparkle' />
-      <a className='email' href='mailto:katryn.mcintosh@gmail.com'>CONTACT ME</a>
+      <p><a className='email' href='mailto:katryn.mcintosh@gmail.com'>email me</a></p>
     </div>
   );
 };
