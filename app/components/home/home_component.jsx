@@ -7,8 +7,8 @@ const Home = () => {
   return (
     <div className='home'>
       <div className='bio'>
-        <div className='profession art'>ARTIST! </div>
-        <div className='profession engineer'>ENGINEER!</div>
+        <div className='profession art'>ARTIST<span className='darken'>!</span></div>
+        <div className='profession engineer'>ENGINEER<span className='darken'>!</span></div>
         <img
           className='front-image'
           src={bunnyHelmet}
