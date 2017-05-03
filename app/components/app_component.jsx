@@ -4,7 +4,7 @@ import SocialBar from './widgets/social_bar_component';
 import Header from './widgets/header_component';
 import Footer from './widgets/footer_component';
 
-const App = React.createClass({
+class App extends React.Component {
   render() {
     return (
       <div className='portfolio-site'>
@@ -19,5 +19,6 @@ const App = React.createClass({
       </div>
     );
   }
-});
+};
+
 export default App;
