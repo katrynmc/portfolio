@@ -25,8 +25,6 @@ const ArtSection = () => {
   return (
     <div className='art'>
       <div className='selected-panel'>
-
-
         <div className='gallery'>
           <img
             className='effect7'
