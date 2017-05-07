@@ -1,16 +1,30 @@
 import React from 'react';
-import { Link } from 'react-router'
+import {
+  Link,
+  NavLink,
+  BrowserRouter as Router,
+  Route
+} from 'react-router-dom';
 
-const Header = () => {
-  return (
-    <div className='header'>
-      <div className='name'><Link to="/">KATRYN MCINTOSH</Link></div>
-      <ul className='nav-items'>
-        <li className='section'><Link to="/art">ART</Link></li>
-        <li className='section'><Link to="">ENGINEERING</Link></li>
-      </ul>
+import Home from '../home/home_component';
+import EngineeringSection from '../engineering/engineering_section_component';
+import ArtSection from '../art/art_index_component';
+
+const Header = () => (
+  <Router>
+    <div>
+      <div className='header'>
+        <div className='name'><Link to="/">KATRYN MCINTOSH</Link></div>
+        <ul className='nav-items'>
+          <li className='section'><NavLink activeClassName='selected' to='/art'>ART</NavLink></li>
+          <li className='section'><NavLink activeClassName='selected' to='/engineering'>ENGINEERING</NavLink></li>
+        </ul>
+      </div>
+      <Route exact path='/' component={Home} />
+      <Route path='/art' component={ArtSection} />
+      <Route path='/engineering' component={EngineeringSection} />
     </div>
-  );
-};
+  </Router>
+);
 
 export default Header;

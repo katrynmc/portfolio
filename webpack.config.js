@@ -59,6 +59,7 @@ module.exports = {
   devtool: 'source-map',
   watch: true,
   devServer: {
+    historyApiFallback: true,
     contentBase: [ './public'],
     port: '8080',
     inline: true,
