@@ -11803,8 +11803,8 @@ var Header = function Header() {
         )
       ),
       _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/', component: _home_component2.default }),
-      _react2.default.createElement(_reactRouterDom.Route, { path: 'art', component: _art_index_component2.default }),
-      _react2.default.createElement(_reactRouterDom.Route, { path: 'engineering', component: _engineering_section_component2.default })
+      _react2.default.createElement(_reactRouterDom.Route, { path: '/art', component: _art_index_component2.default }),
+      _react2.default.createElement(_reactRouterDom.Route, { path: '/engineering', component: _engineering_section_component2.default })
     )
   );
 };
