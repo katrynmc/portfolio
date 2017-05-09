@@ -7,12 +7,10 @@ import Footer from './widgets/footer_component';
 class App extends React.Component {
   render() {
     return (
-      <div className='portfolio-site'>
+      <div id='app' className='portfolio-site'>
         <Header />
         <main>
-          <div className='main-interface'>
-            {this.props.children}
-          </div>
+          {this.props.children}
           <SocialBar />
         </main>
         <Footer />
