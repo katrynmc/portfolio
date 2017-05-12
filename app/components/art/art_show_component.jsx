@@ -9,17 +9,22 @@ const findImage = (imageSlug) => {
   return find(propEq('slug', imageSlug))(PORTFOLIO)
 }
 
+
 const ArtShow = ({ match }) => {
   const image = findImage(match.params.image);
 
   return (
-    <div className='art'>
+    <div className='art-show'>
       <div className='details-panel'>
-        <h6>{image.medium}</h6>
+        <h6>{image.categories}</h6>
         <h3>{`${image.title}, ${image.year}`}</h3>
         <p className='description'>{image.description}</p>
       </div>
       <div className='image-container'>
+      <img
+        className=''
+        src={image.blurredIndex}
+        alt={image.indexAltText} />
       </div>
     </div>
   );
