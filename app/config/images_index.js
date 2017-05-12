@@ -9,7 +9,8 @@ const PORTFOLIO = [
     description: '',
     tags: [],
     medium: '',
-    size: ''
+    size: '',
+    slug: 'lolita'
   },
   {
     title: 'Eyes',
@@ -21,7 +22,8 @@ const PORTFOLIO = [
     description: '',
     tags: [],
     medium: '',
-    size: ''
+    size: '',
+    slug: 'eyes'
   },
   {
     title: 'Knit Parade',
@@ -33,7 +35,8 @@ const PORTFOLIO = [
     description: '',
     tags: [],
     medium: '',
-    size: ''
+    size: '',
+    slug: 'knit-parade'
   },
   {
     title: 'Fat Guy',
@@ -45,9 +48,10 @@ const PORTFOLIO = [
     description: '',
     tags: [],
     medium: '',
-    size: ''
+    size: '',
+    slug: 'fat-guy'
   },
-    {
+  {
     title: 'Knit Grid',
     blurredIndex: require('images/portfolio_index/knitgrid.png'),
     indexAltText: '',
@@ -57,7 +61,8 @@ const PORTFOLIO = [
     description: '',
     tags: [],
     medium: '',
-    size: ''
+    size: '',
+    slug: 'knit-grid'
   },
   {
     title: 'Circuits',
@@ -69,7 +74,8 @@ const PORTFOLIO = [
     description: '',
     tags: [],
     medium: '',
-    size: ''
+    size: '',
+    slug: 'circuits'
   },
   {
     title: 'Cats',
@@ -81,7 +87,8 @@ const PORTFOLIO = [
     description: '',
     tags: [],
     medium: '',
-    size: ''
+    size: '',
+    slug: 'cats'
   },
   {
     title: 'Landscape',
@@ -93,7 +100,8 @@ const PORTFOLIO = [
     description: '',
     tags: [],
     medium: '',
-    size: ''
+    size: '',
+    slug: 'landscape'
   },
   {
     title: 'Knit Paint',
@@ -105,7 +113,8 @@ const PORTFOLIO = [
     description: '',
     tags: [],
     medium: '',
-    size: ''
+    size: '',
+    slug: 'knit-paint'
   },
   {
     title: 'Drawer 1',
@@ -117,7 +126,8 @@ const PORTFOLIO = [
     description: '',
     tags: [],
     medium: '',
-    size: ''
+    size: '',
+    slug: 'drawer-1'
   },
   {
     title: 'Screenprint',
@@ -129,7 +139,8 @@ const PORTFOLIO = [
     description: '',
     tags: [],
     medium: '',
-    size: ''
+    size: '',
+    slug: 'screenprint'
   },
   {
     title: 'Brain Moth',
@@ -141,7 +152,8 @@ const PORTFOLIO = [
     description: '',
     tags: [],
     medium: '',
-    size: ''
+    size: '',
+    slug: 'brain-moth'
   },
   {
     title: 'Stones',
@@ -153,7 +165,8 @@ const PORTFOLIO = [
     description: '',
     tags: [],
     medium: '',
-    size: ''
+    size: '',
+    slug: ''
   },
   {
     title: 'Skull',
@@ -165,7 +178,8 @@ const PORTFOLIO = [
     description: '',
     tags: [],
     medium: '',
-    size: ''
+    size: '',
+    slug: 'skull'
   },
   {
     title: 'Parade',
@@ -177,7 +191,8 @@ const PORTFOLIO = [
     description: '',
     tags: [],
     medium: '',
-    size: ''
+    size: '',
+    slug: 'parade'
   },
   {
     title: 'Huppah',
@@ -189,7 +204,8 @@ const PORTFOLIO = [
     description: '',
     tags: [],
     medium: '',
-    size: ''
+    size: '',
+    slug: 'huppah'
   },
   {
     title: 'Sketch',
@@ -201,7 +217,8 @@ const PORTFOLIO = [
     description: '',
     tags: [],
     medium: '',
-    size: ''
+    size: '',
+    slug: 'sketch'
   }
 ];
 

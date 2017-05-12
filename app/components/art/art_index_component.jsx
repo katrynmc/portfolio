@@ -1,15 +1,20 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+
 import Filters from '../widgets/filters_component';
+import ArtShow from './art_show_component';
+import PORTFOLIO from 'Config/images_index';
 
-import PORTFOLIO from '../../config/images_index';
-
-const ArtSection = () => {
+const ArtIndex = () => {
   const gallery = PORTFOLIO.map((image) =>
-    <img
-      className='index-frame'
-      key={image.title}
-      src={image.blurredIndex}
-      alt={image.indexAltText} />
+    <div key={image.title}>
+      <Link to={`/art/${image.slug}`}>
+        <img
+          className='index-frame'
+          src={image.blurredIndex}
+          alt={image.indexAltText} />
+      </Link>
+    </div>
   );
 
   return (
@@ -21,4 +26,4 @@ const ArtSection = () => {
   );
 };
 
-export default ArtSection;
+export default ArtIndex;

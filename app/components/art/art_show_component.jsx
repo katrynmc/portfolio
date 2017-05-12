@@ -1,26 +1,28 @@
 import React from 'react';
-import Filters from '../widgets/filters_component';
 
-const skull = require('../../assets/images/skull.jpg');
+import R from 'ramda';
+import PORTFOLIO from 'Config/images_index';
 
-const ArtSection = () => {
+const { propEq, pipe, find } = R;
+
+const findImage = (imageSlug) => {
+  return find(propEq('slug', imageSlug))(PORTFOLIO)
+}
+
+const ArtShow = ({ match }) => {
+  const image = findImage(match.params.image);
+
   return (
     <div className='art'>
       <div className='details-panel'>
-        <h6>INSTALLATION</h6>
-        <h3>Day of the Dead, 2015</h3>
-        <p className='description'>Mosaic of colored balloons. Attendees were invited to destroy the piece with darts over the course of the night.</p>
+        <h6>{image.medium}</h6>
+        <h3>{`${image.title}, ${image.year}`}</h3>
+        <p className='description'>{image.description}</p>
       </div>
       <div className='image-container'>
-        <img
-          className='portfolio-large'
-          src={skull}
-          srcSet={`${skull} 1280w`}
-          sizes='100vw'
-          alt='Day of the dead installation - ballon mosaic'/>
       </div>
     </div>
   );
 };
 
-export default ArtSection;
+export default ArtShow;
