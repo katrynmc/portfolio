@@ -8,9 +8,8 @@ class App extends React.Component {
   render() {
     return (
       <div id='app' className='portfolio-site'>
-        <Header />
         <main>
-          {this.props.children}
+          <Header />
           <SocialBar />
         </main>
         <Footer />
