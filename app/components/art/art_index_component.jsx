@@ -10,7 +10,7 @@ const ArtIndex = () => {
     <div key={image.title}>
       <Link to={`/art/${image.slug}`}>
         <img
-          className='index-frame'
+          className='portfolio-image'
           src={image.blurredIndex}
           alt={image.indexAltText} />
       </Link>
