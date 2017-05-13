@@ -7,18 +7,19 @@
 $transparent-white = rgba(255, 255, 255, 0.40)
 
 $light-grey = #f9f9f9
-
+$light-med-grey = #b3bbc7
 $med-grey = #b3bbc7
-
 $darkest-grey = #616a77
+$black = #444343;
 
-$pink = #ffbde2
-$dark-pink = #f796cc
+$blue = #96c4f7
 
-$primary-color-0 = $pink
-$primary-color-1 = $dark-pink
 
-$secondary-color-0 = #76d4da
+$primary-color-0 = $blue
+$primary-color-1 = darken($primary-color-0, 10%)
+
+$secondary-color-0 = #8bb8bb
+$secondary-color-1 = darken($secondary-color-0, 10%)
 
 // TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT
 // YYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYY
@@ -26,13 +27,15 @@ $secondary-color-0 = #76d4da
 // EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE
 
 $serif = 'VT323', monospace
-$san-serif = 'Open Sans', sans-serif
+$sans-serif = 'Open Sans', sans-serif
 
 $serif-letterspacing = 1px
-$san-serif-letterspacing = 2px
+$sans-serif-letterspacing = 2px
 
-$type-small = 0.9em
-$type-medium = 1em
+$type-xx-small = 0.9em
+$type-x-small = 1em
+$type-small = 1.25em
+$type-medium = 1.5em
 $type-large = 2em
 $type-x-large = 3em
 $type-xx-large = 4.3em
@@ -43,14 +46,20 @@ $type-xx-large = 4.3em
 // CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 // EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE
 
-$margin-left = 30px
-$margin-right = 50px
+$tiny-space = 5px
+$small-space = 25px
+$medium-space = 30px
+$large-space = 50px
+$xlarge-space = 90px
 
-$main-content-width = 70%
+$margin-left = $medium-space
+$margin-right = $large-space
+
+$main-content-width = 60%
 $main-content-margin-right = 90px
-$main-content-margin-top = 20px
+$main-content-margin-top = $small-space
 
-
+$sidebar-width = 30%
 
 // Pixels (px)
 // Use for: hairline borders and general elements when creating fixed-width designs; values for CSS shadow displacement. Avoid using in @media breakpoints, as doing so reinforces the tendency to create for device dimensions, rather than where your design needs to adapt. Use rem or em instead.

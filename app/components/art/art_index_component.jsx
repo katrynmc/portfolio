@@ -18,7 +18,7 @@ const ArtIndex = () => {
   );
 
   return (
-    <div className='art'>
+    <div className='art-index'>
       <div className='gallery'>
         {gallery}
       </div>

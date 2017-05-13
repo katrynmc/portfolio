@@ -5,8 +5,10 @@ import Heart from 'react-icons/lib/md/favorite';
 const Footer = () => {
   return (
     <div className='footer'>
-      <Heart className='sparkle' />
-      <p><a className='email' href='mailto:katryn.mcintosh@gmail.com'>email me</a></p>
+      <a className='email' href='mailto:katryn.mcintosh@gmail.com'>
+        <Heart className='sparkle' />
+        email me
+      </a>
     </div>
   );
 };

@@ -1,5 +1,10 @@
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5 {
   font-family: $sans-serif
+}
+
+body {
+  font-family: $sans-serif
+  color: $darkest-grey
 }
 
 h1 {
@@ -14,8 +19,9 @@ h2 {
 }
 
 h3 {
-  font-size: 1.5em
-  margin-bottom: 24px
+  color: $black
+  font-size: $type-medium
+  margin-bottom: $large-space
 }
 
 h4 {
@@ -24,20 +30,23 @@ h4 {
 }
 
 h5 {
-  font-size: $type-medium
-  margin-bottom: 10px
+  color: $secondary-color-0
+  font-size: $type-xx-small
+  margin-bottom: $tiny-space
 }
 
 h6 {
-  letter-spacing: 1
-  font-size: 0.75em
-  margin-bottom: 10px
+  color: $med-grey
+  font-family: $serif
+  font-size: $type-small
+  letter-spacing: $serif-letterspacing
+  margin-bottom: $tiny-space
 }
 
 p {
   color: $darkest-grey
-  font-family: $serif
-  font-size: 1.5em
+  font-family: $sans-serif
+  font-size: $type-xx-small
   line-height: 1.5
 }
 
@@ -60,7 +69,9 @@ body {
   width: 100vw
 }
 
-.main-interface {
-  padding-top: 15vh
+.main-view {
+  float: right
+  width: $main-content-width
+  padding: $main-content-margin-top $main-content-margin-right 0 0
 }
 
