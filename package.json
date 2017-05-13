@@ -22,6 +22,7 @@
     "css-loader": "^0.23.1",
     "express": "^4.14.0",
     "nib": "^1.1.2",
+    "ramda": "^0.23.0",
     "react": "^15.3.1",
     "react-addons-transition-group": "^15.3.2",
     "react-dom": "^15.3.1",

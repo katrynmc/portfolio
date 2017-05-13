@@ -1,35 +1,37 @@
-.home {
-  width: 70%
-  float: right
-  padding: 20px 90px 0 0
+.bio {
+  .front-image {
+    float: right
+    height: 100px
+    width: 100px
+  }
 
-  .bio {
-    .front-image {
-      float: right
-      height: 100px
-      width: 100px
+  .opening-summary {
+    color: $darkest-grey
+    font-family: $serif
+    font-size: $type-medium
+    line-height: 1.5
+    margin-top: $small-space
+  }
+
+  .profession {
+    color: $primary-color-0
+    font-size: $type-xx-large
+    font-family: $sans-serif
+    font-style: italic
+    font-weight: 600
+    line-height: 1.2
+
+    .darken {
+      color: $primary-color-1
     }
 
-    .profession {
-      color: $pink
-      font-size: 4.3em
-      font-family: $san-serif
-      font-style: italic
-      font-weight: 600
-      line-height: 1.2
-
-      .darken {
-        color: $dark-pink
-      }
-
-      &:last-of-type {
-        padding-top: 0
-        margin-bottom: 36px
-      }
+    &:last-of-type {
+      padding-top: 0
+      margin-bottom: 36px
     }
+  }
 
-    .company {
-      font-style: italic
-    }
+  .company {
+    font-style: italic
   }
 }

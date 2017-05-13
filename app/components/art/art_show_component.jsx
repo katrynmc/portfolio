@@ -1,26 +1,46 @@
 import React from 'react';
-import Filters from '../widgets/filters_component';
 
-const skull = require('../../assets/images/skull.jpg');
+import R from 'ramda';
+import PORTFOLIO from 'Config/images_index';
 
-const ArtSection = () => {
+const { propEq, pipe, find, join } = R;
+
+const findImage = (imageSlug) => {
+  return find(propEq('slug', imageSlug))(PORTFOLIO)
+}
+
+const ArtShow = ({ match }) => {
+  const image = findImage(match.params.image);
+  const categories = join(' | ', image.categories)
+
   return (
-    <div className='art'>
-      <div className='details-panel'>
-        <h6>INSTALLATION</h6>
-        <h3>Day of the Dead, 2015</h3>
-        <p className='description'>Mosaic of colored balloons. Attendees were invited to destroy the piece with darts over the course of the night.</p>
+    <div className='art-show'>
+
+      <div className='sidebar'>
+        <h6>{categories}</h6>
+        <h3>{`${image.title}, ${image.year}`}</h3>
+        <p className='description'>{image.description}</p>
+        <div className='production-details'>
+          <div className='stat-wrapper'>
+            <div className='stat'>{image.medium}</div>
+            <h5>MEDIUM</h5>
+          </div>
+          <div className='stat-wrapper'>
+            <div className='stat'>{image.size}</div>
+            <h5>DIMENSIONS</h5>
+          </div>
+        </div>
       </div>
-      <div className='image-container'>
+
+      <div className='main-view image-panel'>
         <img
-          className='portfolio-large'
-          src={skull}
-          srcSet={`${skull} 1280w`}
-          sizes='100vw'
-          alt='Day of the dead installation - ballon mosaic'/>
+          className='large-image'
+          src={image.largeAsset}
+          alt={image.indexAltText} />
       </div>
+
     </div>
   );
 };
 
-export default ArtSection;
+export default ArtShow;

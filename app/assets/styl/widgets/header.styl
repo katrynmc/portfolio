@@ -1,40 +1,47 @@
 .header {
-  width: 100%
   padding: 20px 0 35px
+  width: 100%
 
   .name {
-    font-size: 1em
+    font-size: $type-small
     left: 30px
-    letter-spacing: 1px
+    letter-spacing: $serif-letterspacing
     position: absolute
 
     a {
-      font-family: $san-serif
-      text-decoration: none
       color: $darkest-grey
+      font-family: $sans-serif
+      text-decoration: none
+
+      &:hover {
+        color: $secondary-color-0
+      }
     }
   }
 
   .nav-items {
     float: right
-    padding-right: 90px
+    padding-right: $main-content-margin-right
+
     .section {
+      color: $darkest-grey
       display: inline-block
-      font-family: $san-serif
-      font-size: 1em
-      letter-spacing: 2px
+      font-family: $serif
+      font-size: $type-small
+      letter-spacing: $serif-letterspacing
       padding-left: 40px
 
       a {
         color: $darkest-grey
 
+        &:hover {
+          color: $primary-color-0
+        }
+
         &.selected {
-          color: $pink
-          style: underline
+          color: $primary-color-1
         }
       }
     }
-
-
   }
 }

@@ -6,9 +6,10 @@ import {
   Route
 } from 'react-router-dom';
 
-import Home from '../home/home_component';
-import EngineeringSection from '../engineering/engineering_section_component';
-import ArtSection from '../art/art_index_component';
+import ArtShow from 'Components/art/art_show_component';
+import Home from 'Components/home/home_component';
+import EngineeringSection from 'Components/engineering/engineering_section_component';
+import ArtSection from 'Components/art/art_index_component';
 
 const Header = () => (
   <Router>
@@ -21,8 +22,9 @@ const Header = () => (
         </ul>
       </div>
       <Route exact path='/' component={Home} />
-      <Route path='/art' component={ArtSection} />
-      <Route path='/engineering' component={EngineeringSection} />
+      <Route exact path='/art' component={ArtSection} />
+      <Route path={'/art/:image'} component={ArtShow}/>
+      <Route exact path='/engineering' component={EngineeringSection} />
     </div>
   </Router>
 );
