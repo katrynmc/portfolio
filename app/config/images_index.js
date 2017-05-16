@@ -1,53 +1,12 @@
 import HUPPAH from 'Config/portfolio_data/huppah';
 import SKETCHBOOK from 'Config/portfolio_data/sketchbook';
 import PARADE from 'Config/portfolio_data/parade';
+import EYES from 'Config/portfolio_data/eyes';
+import KNIT_PARADE from 'Config/portfolio_data/knit_parade';
 
 const PORTFOLIO = [
-  {
-    title: 'Lolita',
-    blurredIndex: require('Images/portfolio_index/lolita.png'),
-    indexAltText: 'Detail of Lolita, Oil painting',
-    inFocusIndex: '',
-    largeAsset: require('Images/show/lolita.png'),
-    additionalImages: [],
-    year: '2007',
-    description: '',
-    tags: ['oil', 'painting'],
-    medium: 'Oil on linen',
-    categories: ['PAINTING', '2D'],
-    size: '11in x 14in',
-    slug: 'lolita'
-  },
-  {
-    title: 'Eyes',
-    blurredIndex: require('Images/portfolio_index/eyes.png'),
-    indexAltText: 'Detail of Eyes, Digital Repeat',
-    inFocusIndex: require('Images/portfolio_index/eyes_focus.png'),
-    largeAsset: require('Images/show/eyes.png'),
-    additionalImages: [],
-    year: '2008',
-    description: '',
-    tags: [],
-    medium: 'Adobe Illustrator / U4ia',
-    categories: ['DIGITAL REPEAT', '2D'],
-    size: 'Dimensions variable',
-    slug: 'eyes'
-  },
-  {
-    title: 'Knit Parade',
-    blurredIndex: require('Images/portfolio_index/knit_parade.png'),
-    indexAltText: 'Detail of Knit Parade, Digital Repeat',
-    inFocusIndex: require('Images/portfolio_index/knit_parade_focus.png'),
-    largeAsset: require('Images/show/knit_parade.png'),
-    additionalImages: [],
-    year: '2008',
-    description: '',
-    tags: [],
-    medium: 'U4ia',
-    categories: ['TEXTILES', 'DIGITAL REPEAT'],
-    size: 'Dimensions variable',
-    slug: 'knit-parade'
-  },
+  EYES,
+  KNIT_PARADE,
   {
     title: 'Study in Pleats',
     blurredIndex: require('Images/portfolio_index/fatguy.png'),
@@ -143,7 +102,7 @@ const PORTFOLIO = [
     blurredIndex: require('Images/portfolio_index/drawer1.png'),
     indexAltText: 'Detail of Found Object Still Life, Guoache',
     inFocusIndex: require('Images/portfolio_index/drawer1_focus.png'),
-    largeAsset: require('Images/show/drawer1.jpg'),
+    largeAsset: require('Images/show/drawer1.png'),
     additionalImages: [],
     year: '2006',
     description: '',
@@ -188,7 +147,7 @@ const PORTFOLIO = [
     blurredIndex: require('Images/portfolio_index/stones.png'),
     indexAltText: 'Detail of Painting of Collected Stones, Guoache',
     inFocusIndex: require('Images/portfolio_index/stones_focus.png'),
-    largeAsset: require('Images/show/stones.jpg'),
+    largeAsset: require('Images/show/stones.png'),
     additionalImages: [],
     year: '2006',
     description: '',
@@ -212,6 +171,21 @@ const PORTFOLIO = [
     categories: ['INSTALLATION', '3D'],
     size: '12ft x 12ft',
     slug: 'skull'
+  },
+  {
+    title: 'Lolita',
+    blurredIndex: require('Images/portfolio_index/lolita.png'),
+    indexAltText: 'Detail of Lolita, Oil painting',
+    inFocusIndex: '',
+    largeAsset: require('Images/show/lolita.png'),
+    additionalImages: [],
+    year: '2007',
+    description: '',
+    tags: ['oil', 'painting'],
+    medium: 'Oil on linen',
+    categories: ['PAINTING', '2D'],
+    size: '11in x 14in',
+    slug: 'lolita'
   },
   PARADE,
   HUPPAH,
