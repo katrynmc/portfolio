@@ -25,9 +25,7 @@ class IndexImage extends React.Component {
     return (
       <div
         key={`${image.title}-${this.state.isHovered}wrapper`}
-        className='image-wrapper'
-        onMouseEnter={this.handleHover}
-        onMouseLeave={this.handleHover}>
+        className='image-wrapper'>
         <Link to={`/art/${image.slug}`}>
           <img
             className='portfolio-image'
