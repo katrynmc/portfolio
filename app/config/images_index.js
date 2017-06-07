@@ -142,21 +142,21 @@ const PORTFOLIO = [
     size: '',
     slug: 'brain-moth'
   },
-  {
-    title: 'Collected Stones',
-    blurredIndex: require('Images/portfolio_index/stones.png'),
-    indexAltText: 'Detail of Painting of Collected Stones, Guoache',
-    inFocusIndex: require('Images/portfolio_index/stones_focus.png'),
-    largeAsset: require('Images/show/stones.png'),
-    additionalImages: [],
-    year: '2006',
-    description: '',
-    tags: [],
-    medium: 'Guoache on paper',
-    categories: ['PAINTING', '2D'],
-    size: '6in x 7in',
-    slug: 'stones'
-  },
+  // {
+  //   title: 'Collected Stones',
+  //   blurredIndex: require('Images/portfolio_index/stones.png'),
+  //   indexAltText: 'Detail of Painting of Collected Stones, Guoache',
+  //   inFocusIndex: require('Images/portfolio_index/stones_focus.png'),
+  //   largeAsset: require('Images/show/stones.png'),
+  //   additionalImages: [],
+  //   year: '2006',
+  //   description: '',
+  //   tags: [],
+  //   medium: 'Guoache on paper',
+  //   categories: ['PAINTING', '2D'],
+  //   size: '6in x 7in',
+  //   slug: 'stones'
+  // },
   {
     title: 'Balloon Skull Installation',
     blurredIndex: require('Images/portfolio_index/skull.png'),
@@ -172,21 +172,21 @@ const PORTFOLIO = [
     size: '12ft x 12ft',
     slug: 'skull'
   },
-  {
-    title: 'Lolita',
-    blurredIndex: require('Images/portfolio_index/lolita.png'),
-    indexAltText: 'Detail of Lolita, Oil painting',
-    inFocusIndex: '',
-    largeAsset: require('Images/show/lolita.png'),
-    additionalImages: [],
-    year: '2007',
-    description: '',
-    tags: ['oil', 'painting'],
-    medium: 'Oil on linen',
-    categories: ['PAINTING', '2D'],
-    size: '11in x 14in',
-    slug: 'lolita'
-  },
+  // {
+  //   title: 'Lolita',
+  //   blurredIndex: require('Images/portfolio_index/lolita.png'),
+  //   indexAltText: 'Detail of Lolita, Oil painting',
+  //   inFocusIndex: '',
+  //   largeAsset: require('Images/show/lolita.png'),
+  //   additionalImages: [],
+  //   year: '2007',
+  //   description: '',
+  //   tags: ['oil', 'painting'],
+  //   medium: 'Oil on linen',
+  //   categories: ['PAINTING', '2D'],
+  //   size: '11in x 14in',
+  //   slug: 'lolita'
+  // },
   PARADE,
   HUPPAH,
   SKETCHBOOK

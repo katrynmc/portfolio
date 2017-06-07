@@ -8,10 +8,10 @@ module.exports = {
   ],
 
   output: {
-    path: path.resolve(__dirname, 'public'),
+    path: path.resolve(__dirname, 'build'),
     // the target directory for all output files
     // must be an absolute path (use the Node.js path module)
-    publicPath: '/public/',
+    publicPath: '/build/',
     // the url to the output directory resolved relative to the HTML page
     filename: 'bundle.js'
     // the filename template for entry chunks
@@ -60,7 +60,7 @@ module.exports = {
   watch: true,
   devServer: {
     historyApiFallback: true,
-    contentBase: [ './public'],
+    contentBase: [ './build'],
     port: '8080',
     inline: true,
     overlay: true,
