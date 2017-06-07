@@ -30,7 +30,7 @@ class IndexImage extends React.Component {
         <Link to={`/art/${image.slug}`}>
           <img
             className='portfolio-image'
-            src={this.state.isHovered ? image.inFocusIndex : image.blurredIndex}
+            src={image.inFocusIndex}
             alt={image.indexAltText} />
         </Link>
       </div>
