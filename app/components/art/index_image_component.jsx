@@ -3,10 +3,6 @@ import { Link } from 'react-router-dom';
 
 import ArtShow from './art_show_component';
 
-function unBlur(e) {
-  console.log(e.target)
-}
-
 class IndexImage extends React.Component {
   constructor(props) {
     super(props)
@@ -25,8 +21,12 @@ class IndexImage extends React.Component {
 
   render() {
     const { image } = this.props;
+
     return (
-      <div key={image.title} onMouseEnter={this.handleHover} onMouseLeave={this.handleHover}>
+      <div
+        key={`${image.title}-${this.state.isHovered}wrapper`}
+        onMouseEnter={this.handleHover}
+        onMouseLeave={this.handleHover}>
         <Link to={`/art/${image.slug}`}>
           <img
             className='portfolio-image'

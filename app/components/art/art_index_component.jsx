@@ -8,9 +8,7 @@ import PORTFOLIO from 'Config/images_index';
 
 const ArtIndex = () => {
   const gallery = PORTFOLIO.map((image) =>
-    <div key={image.title}>
-      <Image image={image} />
-    </div>
+    <Image key={`${image.year}-${image.slug}`} image={image} />
   );
 
   return (
