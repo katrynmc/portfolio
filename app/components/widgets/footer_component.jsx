@@ -6,7 +6,6 @@ const Footer = () => {
   return (
     <div className='footer'>
       <a className='email' href='mailto:katryn.mcintosh@gmail.com'>
-        <Heart className='sparkle' />
         EMAIL ME
       </a>
     </div>

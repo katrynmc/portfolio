@@ -3,85 +3,20 @@ import SKETCHBOOK from 'Config/portfolio_data/sketchbook';
 import PARADE from 'Config/portfolio_data/parade';
 import EYES from 'Config/portfolio_data/eyes';
 import KNIT_PARADE from 'Config/portfolio_data/knit_parade';
+import PLEATS_STUDY from 'Config/portfolio_data/pleats_study';
+import LANDSCAPE from 'Config/portfolio_data/landscape';
+import KNIT_GRID from 'Config/portfolio_data/knit_grid';
+import CIRCUITS from 'Config/portfolio_data/circuits';
+import CATS from 'Config/portfolio_data/cats';
 
 const PORTFOLIO = [
   EYES,
   KNIT_PARADE,
-  {
-    title: 'Study in Pleats',
-    blurredIndex: require('Images/portfolio_index/fatguy.png'),
-    indexAltText: 'Detail of Pleats Study, Machine Knit',
-    inFocusIndex: require('Images/portfolio_index/fatguy_focus.png'),
-    largeAsset: require('Images/show/fatman.png'),
-    additionalImages: [],
-    year: '2006',
-    description: '',
-    tags: [],
-    medium: 'Machine Knit',
-    categories: ['MACHINE KNIT', 'TEXTILES'],
-    size: '8in x 8in',
-    slug: 'fat-guy'
-  },
-  {
-    title: 'Knit Grid',
-    blurredIndex: require('Images/portfolio_index/knitgrid.png'),
-    indexAltText: 'Detail of Knit Grid, Machine Knit',
-    inFocusIndex: require('Images/portfolio_index/knitgrid_focus.png'),
-    largeAsset: require('Images/show/knitgrid.png'),
-    additionalImages: [],
-    year: '2007',
-    description: '',
-    tags: [],
-    medium: 'Machine Knit panel',
-    categories: ['MACHINE KNIT', 'TEXTILES'],
-    size: '3ft x 3ft',
-    slug: 'knit-grid'
-  },
-  {
-    title: 'Circuits',
-    blurredIndex: require('Images/portfolio_index/circuits.png'),
-    indexAltText: 'Detail of Circuits Machine Knit',
-    inFocusIndex: require('Images/portfolio_index/circuits_focus.png'),
-    largeAsset: require('Images/show/circuits.png'),
-    additionalImages: [],
-    year: '2006',
-    description: '',
-    tags: [],
-    medium: 'Machine knit',
-    categories: ['MACHINE KNIT', 'TEXTILES'],
-    size: '8in x 8in',
-    slug: 'circuits'
-  },
-  {
-    title: 'Cats',
-    blurredIndex: require('Images/portfolio_index/cats.png'),
-    indexAltText: 'Detail of Cats, Machine Knit',
-    inFocusIndex: require('Images/portfolio_index/cats_focus.png'),
-    largeAsset: require('Images/show/cats.png'),
-    additionalImages: [],
-    year: '2006',
-    description: 'Machine knit',
-    tags: [],
-    medium: 'Machine Knit',
-    categories: ['MACHINE KNIT', 'TEXTILES'],
-    size: '8in x 10in',
-    slug: 'cats'
-  },
-  {
-    title: 'Landscape',
-    blurredIndex: require('Images/portfolio_index/landscape.png'),
-    indexAltText: 'Detail of Landscape, Machine Knit',
-    inFocusIndex: require('Images/portfolio_index/landscape_focus.png'),
-    largeAsset: require('Images/show/landscape.png'),
-    additionalImages: [],
-    year: '2007',
-    description: '',
-    tags: [],
-    medium: 'Machine Knit panel',
-    categories: ['MACHINE KNIT', 'TEXTILES'],
-    size: '2.5ft x 6ft',
-    slug: 'landscape'
-  },
+  PLEATS_STUDY,
+  KNIT_GRID,
+  CIRCUITS,
+  CATS,
+  LANDSCAPE,
   {
     title: 'Knit Paint',
     blurredIndex: require('Images/portfolio_index/knitpaint.png'),

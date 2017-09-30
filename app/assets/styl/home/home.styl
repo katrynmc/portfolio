@@ -1,33 +1,43 @@
 .bio {
   .front-image {
-    float: right
-    height: 100px
-    width: 100px
+    height: 10vw
+    width: auto
   }
 
   .opening-summary {
     color: $darkest-grey
     font-family: $serif
     font-size: $type-medium
+    text-align: center;
     line-height: 1.5
-    margin-top: $small-space
+    margin-top: 50px;
+  }
+
+  .heads {
+    margin: 50px -20px 0 -20px
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+  }
+
+  .title {
+    color: $light-grey
+    font-size: $type-xx-large
+    font-family: $sans-serif
+    background-color: #2f2f2f
+    padding: 40px
+    margin-top: 50px
   }
 
   .profession {
-    color: $primary-color-0
-    font-size: $type-xx-large
-    font-family: $sans-serif
-    font-style: italic
+
+
     font-weight: 600
     line-height: 1.2
+    text-align: center
 
     .darken {
       color: $primary-color-1
-    }
-
-    &:last-of-type {
-      padding-top: 0
-      margin-bottom: 36px
     }
   }
 
