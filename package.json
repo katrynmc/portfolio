@@ -1,19 +1,17 @@
 {
   "name": "katryn_mcintosh",
   "version": "1.0.0",
-  "description": "A portfolio site of art and a front end development showpiece.",
+  "description":
+    "A portfolio site of art and a front end development showpiece.",
   "main": "index.js",
   "scripts": {
     "start": "NODE_ENV=production node app.js",
+    "pretty":
+      "prettier --trailing-comma es5 --write --jsx-bracket-same-line 'app{/**/*.js,/**/*.jsx}'",
     "start-dev": "node_modules/.bin/webpack-dev-server --hot --inline --open",
     "build": "./node_modules/.bin/webpack --config webpack.config.js"
   },
-  "keywords": [
-    "react",
-    "design",
-    "webpack",
-    "stylus"
-  ],
+  "keywords": ["react", "design", "webpack", "stylus"],
   "author": "Katryn McIntosh",
   "license": "ISC",
   "dependencies": {
@@ -22,6 +20,7 @@
     "css-loader": "^0.23.1",
     "express": "^4.14.0",
     "nib": "^1.1.2",
+    "prettier": "^1.7.4",
     "ramda": "^0.23.0",
     "react": "^15.3.1",
     "react-addons-transition-group": "^15.3.2",
