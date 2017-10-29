@@ -1,44 +1,43 @@
-import React from 'react';
+import React from "react";
 
-import R from 'ramda';
-import PORTFOLIO from 'Config/images_index';
+import R from "ramda";
+import PORTFOLIO from "Config/images_index";
 
 const { propEq, pipe, find, join } = R;
 
-const findImage = (imageSlug) => {
-  return find(propEq('slug', imageSlug))(PORTFOLIO)
-}
+const findImage = imageSlug => {
+  return find(propEq("slug", imageSlug))(PORTFOLIO);
+};
 
 const ArtShow = ({ match }) => {
   const image = findImage(match.params.image);
-  const categories = join(' | ', image.categories)
+  const categories = join(" | ", image.categories);
 
   return (
-    <div className='art-show'>
-
-      <div className='sidebar'>
+    <div className="art-show">
+      <div className="sidebar">
         <h6>{categories}</h6>
         <h3>{`${image.title}, ${image.year}`}</h3>
-        <p className='description'>{image.description}</p>
-        <div className='production-details'>
-          <div className='stat-wrapper'>
-            <div className='stat'>{image.medium}</div>
+        <p className="description">{image.description}</p>
+        <div className="production-details">
+          <div className="stat-wrapper">
+            <div className="stat">{image.medium}</div>
             <h5>MEDIUM</h5>
           </div>
-          <div className='stat-wrapper'>
-            <div className='stat'>{image.size}</div>
+          <div className="stat-wrapper">
+            <div className="stat">{image.size}</div>
             <h5>DIMENSIONS</h5>
           </div>
         </div>
       </div>
 
-      <div className='main-view image-panel'>
+      <div className="main-view image-panel">
         <img
-          className='large-image'
+          className="large-image"
           src={image.largeAsset}
-          alt={image.indexAltText} />
+          alt={image.indexAltText}
+        />
       </div>
-
     </div>
   );
 };
