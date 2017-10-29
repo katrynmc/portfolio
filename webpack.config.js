@@ -26,12 +26,24 @@ module.exports = {
           path.resolve(__dirname, 'app')
         ],
         options: {
-          presets: ['es2015', 'react']
+          presets: ['babel-preset-env', 'react']
         }
       },
       {
         test: /\.(png|jpg)$/,
         loader: 'file-loader?name=img/img-[hash:6].[ext]'
+      },
+     {
+          test: /\.svg$/,
+          exclude: /node_modules/,
+          loader: 'svg-react-loader',
+          query: {
+              classIdPrefix: '[name]-[hash:8]__',
+              propsMap: {
+                  fillRule: 'fill-rule'
+              },
+              xmlnsTest: /^xmlns.*$/
+          }
       },
       {
         test: /\.styl$/,
