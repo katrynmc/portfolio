@@ -1,14 +1,14 @@
 import React from "react";
 
-import OctoFace from "react-icons/lib/go/octoface";
-import Instagram from "react-icons/lib/fa/instagram";
-import Twitter from "react-icons/lib/fa/twitter";
-import LinkedIn from "react-icons/lib/fa/linkedin";
+import { OctoFace } from "react-icons/fa";
+import { Instagram } from "react-icons/fa";
+import { Twitter } from "react-icons/fa";
+import { LinkedIn } from "react-icons/fa";
 
 const SocialBar = () => {
   return (
     <div className="social-wrapper">
-      <a href="http://twitter.com/katrynmcintosh" target="_new">
+      {/* <a href="http://twitter.com/katrynmcintosh" target="_new">
         <Twitter className="social-icon" />
       </a>
       <a href="http://instagram.com/katrynmcintosh" target="_new">
@@ -19,7 +19,7 @@ const SocialBar = () => {
       </a>
       <a href="http://linkedin.com/in/katrynmcintosh" target="_new">
         <LinkedIn className="social-icon" />
-      </a>
+      </a> */}
     </div>
   );
 };

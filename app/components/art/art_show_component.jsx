@@ -1,9 +1,7 @@
 import React from "react";
 
-import R from "ramda";
+import { propEq, find, join } from "ramda";
 import PORTFOLIO from "Config/images_index";
-
-const { propEq, pipe, find, join } = R;
 
 const findImage = imageSlug => {
   return find(propEq("slug", imageSlug))(PORTFOLIO);
