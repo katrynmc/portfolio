@@ -1,0 +1,21 @@
+.sidebar {
+  background-color: var(--light-grey);
+  height: 100%;
+  padding-left: var(--margin-left);
+  padding-right: var(--medium-space);
+  padding-top: var(--main-content-margin-top);
+  position: fixed;
+  width: var(--sidebar-width);
+}
+
+.filter-option {
+  color: var(--med-grey);
+  font-family: var(--serif);
+  letter-spacing: var(--serif-letterspacing);
+  margin-bottom: 8px;
+}
+
+.filter-option:hover {
+  box-shadow: 3px 3px var(--primary-color-0);
+  color: #9977bd;
+}

@@ -1,5 +1,5 @@
 import React from "react";
-import Square from "react-icons/lib/go/primitive-square";
+
 const Filters = () => {
   return (
     <div className="sidebar">

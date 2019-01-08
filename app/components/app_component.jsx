@@ -1,4 +1,5 @@
 import React from "react";
+import { hot } from "react-hot-loader";
 
 import SocialBar from "./widgets/social_bar_component";
 import Header from "./widgets/header_component";
@@ -18,4 +19,4 @@ class App extends React.Component {
   }
 }
 
-export default App;
+export default hot(module)(App);

@@ -1,13 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-import ArtShow from "./art_show_component";
-
 class IndexImage extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      isHovered: false,
+      isHovered: false
     };
 
     this.handleHover = this.handleHover.bind(this);
@@ -15,7 +13,7 @@ class IndexImage extends React.Component {
 
   handleHover() {
     this.setState(prevState => ({
-      isHovered: !prevState.isHovered,
+      isHovered: !prevState.isHovered
     }));
   }
 
@@ -25,7 +23,8 @@ class IndexImage extends React.Component {
     return (
       <div
         key={`${image.title}-${this.state.isHovered}wrapper`}
-        className="image-wrapper">
+        className="image-wrapper"
+      >
         <Link to={`/art/${image.slug}`}>
           <img
             className="portfolio-image"

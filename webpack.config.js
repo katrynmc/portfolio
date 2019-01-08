@@ -1,78 +1,95 @@
-const path = require('path');
-const webpack = require('webpack');
+const path = require("path");
+const webpack = require("webpack");
+
+const ENV = process.env.NODE_ENV || "development";
 
 module.exports = {
-  entry: [
-    // 'webpack-hot-middleware/client',
-    './app/entry'
-  ],
+  entry: ["./app/entry"],
 
   output: {
-    path: path.resolve(__dirname, 'build'),
+    path: path.resolve(__dirname, "build"),
     // the target directory for all output files
     // must be an absolute path (use the Node.js path module)
-    publicPath: '/build/',
+    publicPath: "/build/",
     // the url to the output directory resolved relative to the HTML page
-    filename: 'bundle.js'
+    filename: "bundle.js"
     // the filename template for entry chunks
   },
 
   module: {
     rules: [
       {
-        test: /\.jsx?$/,
-        loader: 'babel-loader',
-        include: [
-          path.resolve(__dirname, 'app')
-        ],
-        options: {
-          presets: ['es2015', 'react']
-        }
+        test: /\.(j|t)sx?$/,
+        include: [path.resolve(__dirname, "app")],
+        exclude: /node_modules/,
+        use: [
+          {
+            loader: "babel-loader",
+            options: {
+              cacheDirectory: true,
+              babelrc: false,
+              presets: [
+                [
+                  "@babel/preset-env",
+                  { targets: { browsers: "last 2 versions" } }
+                ],
+                "@babel/preset-typescript",
+                "@babel/preset-react"
+              ],
+              plugins: [
+                "@babel/plugin-proposal-object-rest-spread",
+                "react-hot-loader/babel"
+              ]
+            }
+          }
+        ]
       },
+
       {
         test: /\.(png|jpg)$/,
-        loader: 'file-loader?name=img/img-[hash:6].[ext]'
+        loader: "file-loader?name=img/img-[hash:6].[ext]"
       },
       {
         test: /\.styl$/,
         use: [
           {
-            loader: 'style-loader'
+            loader: "style-loader"
           },
           {
-            loader: 'css-loader'
+            loader: "css-loader"
           },
           {
-            loader: 'autoprefixer-loader'
-          },
-          {
-            loader: 'stylus-loader',
+            loader: "stylus-loader",
             options: {
-              use: [require('nib')()],
-              import: ['~nib/lib/nib/index.styl']
+              use: [require("nib")()],
+              import: ["~nib/lib/nib/index.styl"]
             }
-          },
-        ],
+          }
+        ]
       }
-    ],
+    ]
   },
-  devtool: 'source-map',
-  watch: true,
+  devtool: ENV !== "development" ? "source-map" : "eval-source-map",
+
   devServer: {
+    compress: true,
+    contentBase: ["./build"],
+    headers: {
+      "Access-Control-Allow-Origin": "*"
+    },
     historyApiFallback: true,
-    contentBase: [ './build'],
-    port: '8080',
+    hot: true,
+    hotOnly: true,
     inline: true,
-    overlay: true,
-    hot: true
+    port: 8080
   },
   resolve: {
-    extensions: ['.js', '.jsx', '.styl'],
+    extensions: [".js", ".jsx", ".ts", ".tsx", ".styl"],
     alias: {
-      Images: path.resolve(__dirname, 'app/assets/images'),
-      Config: path.resolve(__dirname, 'app/config'),
-      Components: path.resolve(__dirname, 'app/components'),
-      Styles: path.resolve(__dirname, 'app/assets/styl'),
+      Images: path.resolve(__dirname, "app/assets/images"),
+      Config: path.resolve(__dirname, "app/config"),
+      Components: path.resolve(__dirname, "app/components"),
+      Styles: path.resolve(__dirname, "app/assets/styl")
     }
   }
 };
