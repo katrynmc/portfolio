@@ -1,0 +1,20 @@
+.footer {
+  background-color: var(--light-grey);
+  bottom: 0;
+  font-size: var(--type-x-small);
+  height: 1.25em;
+  padding: 20px 30px;
+  position: fixed;
+  width: 100vw;
+}
+
+.email {
+  color: var(--darkest-grey);
+  display: inline-block;
+  font-family: var(--sans-serif);
+  letter-spacing: var(--sans-serif-letterspacing);
+}
+
+.email:hover {
+  color: var(--secondary-color-0);
+}
