@@ -1,0 +1,48 @@
+.header {
+  background-color: var(--light-grey);
+  padding: 20px 0 35px;
+  width: 100%;
+}
+
+.header .nav-items {
+  float: right;
+  padding-right: var(--main-content-margin-right);
+}
+
+.header .nav-items .section {
+  color: var(--darkest-grey);
+  display: inline-block;
+  font-family: var(--sans-serif);
+  font-size: var(--type-x-small);
+  letter-spacing: var(--serif-letterspacing);
+  padding-left: 40px;
+}
+
+.header .nav-items .section a {
+  color: var(--darkest-grey);
+}
+
+.header .nav-items .section a.selected {
+  color: var(--primary-color-1);
+}
+
+.header .nav-items .section a:hover {
+  color: var(--primary-color-0);
+}
+
+.header .name {
+  font-size: var(--type-small);
+  left: 30px;
+  letter-spacing: var(--serif-letterspacing);
+  position: absolute;
+}
+
+.header .name a {
+  color: var(--darkest-grey);
+  font-family: var(--sans-serif);
+  text-decoration: none;
+}
+
+.header .name a:hover {
+  color: var(--secondary-color-0);
+}

@@ -53,13 +53,6 @@ module.exports = {
           },
           {
             loader: "autoprefixer-loader"
-          },
-          {
-            loader: "stylus-loader",
-            options: {
-              use: [require("nib")()],
-              import: ["~nib/lib/nib/index.styl"]
-            }
           }
         ]
       }
@@ -81,7 +74,7 @@ module.exports = {
   ],
 
   resolve: {
-    extensions: [".js", ".jsx", ".styl"],
+    extensions: [".js", ".jsx", ".css"],
     alias: {
       Images: path.resolve(__dirname, "app/assets/images/")
     }

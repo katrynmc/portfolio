@@ -1,5 +1,6 @@
 import React from "react";
 import TransitionGroup from "react-addons-transition-group";
+import "Styles/home/home.css";
 
 const bunnyHelmet = require("../../assets/images/bunny_helmet.png");
 
