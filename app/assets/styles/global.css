@@ -1,4 +1,8 @@
 :root {
+  /* re-design vars */
+  --main-gray: #2f2f2f;
+  --block: 10px;
+  /* end re-design vars */
   --black: #444343;
   --blue: #96c4f7;
   --darkest-grey: #616a77;

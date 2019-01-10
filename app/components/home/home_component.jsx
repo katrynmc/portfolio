@@ -1,19 +1,13 @@
 import React from "react";
-import TransitionGroup from "react-addons-transition-group";
+
 import "Styles/home/home.css";
 
-const bunnyHelmet = require("../../assets/images/bunny_helmet.png");
-
-const Home = () => {
+function Home() {
   return (
-    <div className="main-view bio">
-      <div className="title">
-        <div className="profession art">
-          ARTIST<span className="darken">!</span>
-        </div>
-        <div className="profession engineer">
-          ENGINEER<span className="darken">!</span>
-        </div>
+    <div className="bio">
+      <div className="classification">
+        <div className="profession">ART +</div>
+        <div className="profession">ENGINEERING</div>
       </div>
 
       <div className="opening-summary">
@@ -24,40 +18,8 @@ const Home = () => {
         Providence, RI and is a member of the artist collective{" "}
         <span className="company">the Wurks</span>.
       </div>
-      <div className="heads">
-        <img
-          className="front-image"
-          src={bunnyHelmet}
-          alt="Digital drawing - helmet with two mounted bunny heads"
-        />
-        <img
-          className="front-image"
-          src={bunnyHelmet}
-          alt="Digital drawing - helmet with two mounted bunny heads"
-        />
-        <img
-          className="front-image"
-          src={bunnyHelmet}
-          alt="Digital drawing - helmet with two mounted bunny heads"
-        />
-        <img
-          className="front-image"
-          src={bunnyHelmet}
-          alt="Digital drawing - helmet with two mounted bunny heads"
-        />
-        <img
-          className="front-image"
-          src={bunnyHelmet}
-          alt="Digital drawing - helmet with two mounted bunny heads"
-        />
-        <img
-          className="front-image"
-          src={bunnyHelmet}
-          alt="Digital drawing - helmet with two mounted bunny heads"
-        />
-      </div>
     </div>
   );
-};
+}
 
 export default Home;
