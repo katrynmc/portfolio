@@ -31,9 +31,11 @@
 }
 
 .header .name {
-  font-size: var(--type-small);
+  color: #565a6d;
+  font-family: var(--product-name-font);
+  font-size: 3em;
   left: 30px;
-  letter-spacing: var(--serif-letterspacing);
+
   position: absolute;
 }
 

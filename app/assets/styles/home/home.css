@@ -1,38 +1,55 @@
-.bio {
+@import url("https://fonts.googleapis.com/css?family=Source+Code+Pro");
+
+@import url("https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed");
+
+body {
+  background: var(--container-border);
+  color: var(--text-light);
+  font-family: var(--body-font);
+}
+
+a {
+  color: var(--text-dark);
+}
+
+.home {
+  background: var(--panel-background-color);
+  height: 100vh;
+  padding: calc(2 * var(--grid-base)) calc(4 * var(--grid-base));
+}
+
+.home-row {
   display: flex;
-  flex-direction: row;
-}
-
-.bio .front-image {
-  height: 10vw;
-  width: auto;
-}
-
-.bio .opening-summary {
-  color: var(--darkest-grey);
-  font-family: var(--serif);
-  font-size: var(--type-medium);
-  text-align: center;
-  line-height: 1.5;
-  margin-top: 50px;
-}
-
-.bio .heads {
-  margin: 50px -20px 0 -20px;
-  display: flex;
-  flex-direction: row;
   justify-content: space-between;
 }
 
-.bio .classification {
-  background-color: var(--main-gray);
-  color: var(--light-grey);
-  font-family: var(--sans-serif);
-  font-size: var(--type-xx-large);
-  padding: 40px;
+.statement-panel {
+  width: 45%;
 }
 
-.bio .profession {
-  font-weight: 600;
-  line-height: 1.2;
+.name {
+  color: #565a6d;
+  font-family: var(--product-name-font);
+  font-size: 3em;
+}
+
+.heading {
+  color: var(--cream);
+  margin-top: calc(5 * var(--grid-base));
+  margin-bottom: calc(2 * var(--grid-base));
+  padding-top: calc(0.5 * var(--grid-base));
+}
+
+.bio {
+  border-left: 1px solid var(--container-border);
+  line-height: 1.5;
+  padding-left: calc(2 * var(--grid-base));
+  margin-bottom: calc(2.5 * var(--grid-base));
+}
+
+.comment {
+  color: var(--text-light);
+  font-family: var(--body-font);
+  font-size: 14px;
+  margin-left: calc(2 * var(--grid-base));
 }

@@ -1,7 +1,15 @@
 :root {
   /* re-design vars */
-  --main-gray: #2f2f2f;
-  --block: 10px;
+  --grid-base: 10px;
+  --body-font: "Source Code Pro", monospace;
+  --product-name-font: "Barlow Semi Condensed", sans-serif;
+  --panel-background-color: #1f212a;
+  --green: #21a721;
+  --cream: #dcdcc8;
+  --container-border: #2c2d40;
+  --text-light: #757c86;
+  --text-dark: #454759;
+
   /* end re-design vars */
   --black: #444343;
   --blue: #96c4f7;
@@ -12,9 +20,6 @@
   --transparent-white: rgba(255, 255, 255, 0.4);
   --primary-color-0: var(--blue);
   --secondary-color-0: var(--blue);
-
-  --serif: "VT323", monospace;
-  --sans-serif: "Open Sans", sans-serif;
 
   --serif-letterspacing: 1px;
   --sans-serif-letterspacing: 2px;
