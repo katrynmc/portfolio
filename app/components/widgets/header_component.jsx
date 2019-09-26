@@ -3,7 +3,7 @@ import {
   Link,
   NavLink,
   BrowserRouter as Router,
-  Route
+  Route,
 } from "react-router-dom";
 
 import "Styles/home/home.css";
