@@ -1,11 +1,11 @@
-const path = require('path')
-const express = require('express')
+var path = require('path')
+var express = require('express')
 
 module.exports = {
   app: function () {
-    const app = express()
-    const indexPath = path.join(__dirname, 'build/index.html')
-    const publicPath = express.static(path.join(__dirname, 'build'))
+    var app = express()
+    var indexPath = path.join(__dirname, 'build/index.html')
+    var publicPath = express.static(path.join(__dirname, 'build'))
 
     app.use('/build', publicPath)
     app.get('*', function (request, response){
