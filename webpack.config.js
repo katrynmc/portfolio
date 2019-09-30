@@ -4,7 +4,7 @@ const webpack = require("webpack");
 const ENV = process.env.NODE_ENV || "development";
 
 module.exports = {
-  entry: ["./app/entry"],
+  entry: ["./app/index"],
 
   output: {
     path: path.resolve(__dirname, "build"),

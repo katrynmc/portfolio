@@ -3,7 +3,7 @@ import { render } from "react-dom";
 
 import "../style.css";
 
-import App from "./components/app_component";
+import App from "./components/app";
 
 const appDiv = document.createElement("div");
 
