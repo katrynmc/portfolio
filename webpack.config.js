@@ -33,7 +33,6 @@ module.exports = {
                   "@babel/preset-env",
                   { targets: { browsers: "last 2 versions" } }
                 ],
-                "@babel/preset-typescript",
                 "@babel/preset-react"
               ],
               plugins: [
@@ -50,22 +49,8 @@ module.exports = {
         loader: "file-loader?name=img/img-[hash:6].[ext]"
       },
       {
-        test: /\.styl$/,
-        use: [
-          {
-            loader: "style-loader"
-          },
-          {
-            loader: "css-loader"
-          },
-          {
-            loader: "stylus-loader",
-            options: {
-              use: [require("nib")()],
-              import: ["~nib/lib/nib/index.styl"]
-            }
-          }
-        ]
+        test: /\.css$/,
+        use: ["style-loader", "css-loader"]
       }
     ]
   },
@@ -84,12 +69,12 @@ module.exports = {
     port: 8080
   },
   resolve: {
-    extensions: [".js", ".jsx", ".ts", ".tsx", ".styl"],
+    extensions: [".js", ".jsx", ".ts", ".tsx", ".css"],
     alias: {
       Images: path.resolve(__dirname, "app/assets/images"),
       Config: path.resolve(__dirname, "app/config"),
       Components: path.resolve(__dirname, "app/components"),
-      Styles: path.resolve(__dirname, "app/assets/styl")
+      Styles: path.resolve(__dirname, "app/assets/styles")
     }
   }
 };
