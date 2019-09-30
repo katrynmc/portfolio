@@ -1,17 +1,17 @@
 .footer {
-  background-color: var(--light-grey);
+  /* background-color: var(--light-grey); */
   bottom: 0;
   font-size: var(--type-x-small);
   height: 1.25em;
-  padding: 20px 30px;
+  padding: 20px 0px;
   position: fixed;
+  text-align: center;
   width: 100vw;
 }
 
 .email {
   color: var(--darkest-grey);
-  display: inline-block;
-  font-family: var(--sans-serif);
+  font-family: var(--product-name-font);
   letter-spacing: var(--sans-serif-letterspacing);
 }
 

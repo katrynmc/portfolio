@@ -15,22 +15,10 @@ import ArtSection from "Components/art/art_index_component";
 
 const Header = () => (
   <Router>
-    <div>
-      <div className="header">
-        <ul className="nav-items">
-          <li className="section">
-            <NavLink activeClassName="selected" to="/art">
-              ART
-            </NavLink>
-          </li>
-          <li className="section">ENGINEERING</li>
-        </ul>
-      </div>
-      <Route exact path="/" component={Home} />
-      <Route exact path="/art" component={ArtSection} />
-      <Route path={"/art/:image"} component={ArtShow} />
-      <Route exact path="/engineering" component={EngineeringSection} />
-    </div>
+    <Route exact path="/" component={Home} />
+    <Route exact path="/art" component={ArtSection} />
+    <Route path={"/art/:image"} component={ArtShow} />
+    <Route exact path="/engineering" component={EngineeringSection} />
   </Router>
 );
 

@@ -1,62 +1,54 @@
 import React from "react";
 
+const linePainting = require("../../assets/images/knitpaint.png");
+
 import "Styles/home/home.css";
 
 function Home() {
   return (
-    <div class="home">
-      <div class="name">
-        Katryn McIntosh<span class="comment">// Art & Engineering</span>
+    <div className="home">
+      <h2 className="name">KATRYN McINTOSH</h2>
+      <div className="painting-left">
+        <img src={linePainting} />
       </div>
-      <div class="home-row">
-        <div class="statement-panel">
-          <div class="heading">As an Engineer</div>
-          <div class="bio">
-            I'm passionate about building inspiring interfaces and experiences
-            with great people.
-          </div>
-          <div class="bio">I value engagement with inclusive communities.</div>
-          <div class="bio">
-            I believe that technology has the potential to enrich peoples lives.
-          </div>
-          <div class="heading">As an Artist</div>
-          <div class="bio">
-            I'm compelled by immersive experiences that challenge our vision of
-            reality.
-          </div>
-          <div class="bio">
-            I take comfort in systems like those found in textiles, procedurally
-            generated art, THE GRID&trade;, and of course technology.
-          </div>
-          <div class="bio">
-            I believe that art has the potential to enrich peoples lives.
+      <div className="painting-right">
+        <img src={linePainting} />
+      </div>
+
+      <div className="full-width focus-panel">
+        <div className="motivation">
+          <h1 className="focus-heading">Art & Engineering</h1>
+          I'm passionate about building inspiring (and maintainable!) interfaces
+          and experiences with great people. I value engagement with inclusive
+          teams and believe that both art and technology have the potential to
+          enrich peoples lives.
+        </div>
+      </div>
+      <div className="full-width background-panel">
+        <div className="background">
+          <h3 className="heading">Background</h3>
+          <div>
+            I graduated from the Rhode Island School of Design (RISD) in 2007
+            with a BFA in Painting. After exploring a variety of colorful
+            industries that range from galleries to fashion, I fell in love with
+            software engineering. My primary focus over the past 5 years has
+            been UI engineering architecture and leadership.
           </div>
         </div>
-        <div class="statement-panel">
-          <div class="heading">My Background</div>
-          <div class="bio">
-            I graduated from the Rhode Island School of Design [ RISD ] with a
-            BFA in Painting.
-          </div>
-          <div class="bio">
-            I worked in fashion for several years and maintain a deep
-            appreciation for colors, fabrics, and trims.
-          </div>
-          <div class="bio">
-            I work for Upserve as a Senior UI Engineer in Providence, RI and
-            belong to the artist collective the Wurks.
-          </div>
-          <div class="heading">Find me</div>
-          <div class="bio">
+        <ul className="social-links">
+          <li>
             <a href="https://github.com/katrynmc">Github</a>
-          </div>
-          <div class="bio">
+          </li>
+          <li>
+            <a href="https://linkedin.com/in/katrynmcintosh">LinkedIn</a>
+          </li>
+          <li>
             <a href="https://twitter.com/katrynmcintosh">Twitter</a>
-          </div>
-          <div class="bio">
+          </li>
+          <li>
             <a href="https://instagram.com/katrynmcintosh">Instagram</a>
-          </div>
-        </div>
+          </li>
+        </ul>
       </div>
     </div>
   );

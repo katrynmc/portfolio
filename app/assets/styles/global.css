@@ -1,13 +1,13 @@
 :root {
   /* re-design vars */
   --grid-base: 10px;
-  --body-font: "Source Code Pro", monospace;
-  --product-name-font: "Barlow Semi Condensed", sans-serif;
+  --body-font: "PT Serif";
+  --product-name-font: "Montserrat", sans-serif;
   --panel-background-color: #1f212a;
   --green: #21a721;
   --cream: #dcdcc8;
   --container-border: #2c2d40;
-  --text-light: #757c86;
+  --text-light: #71777f;
   --text-dark: #454759;
 
   /* end re-design vars */
@@ -61,42 +61,6 @@ body {
   color: var(--darkest-grey);
 }
 
-h1 {
-  font-size: var(--type-x-large);
-  color: var(--primary-color-0);
-  margin-bottom: 10px;
-}
-
-h2 {
-  font-size: var(--type-large);
-  margin-bottom: 10px;
-}
-
-h3 {
-  color: var(--black);
-  font-size: var(--type-medium);
-  margin-bottom: var(--large-space);
-}
-
-h4 {
-  font-size: 1.125em;
-  margin-bottom: 10px;
-}
-
-h5 {
-  color: var(--secondary-color-0);
-  font-size: var(--type-xx-small);
-  margin-bottom: var(--tiny-space);
-}
-
-h6 {
-  color: var(--med-grey);
-  font-family: var(--serif);
-  font-size: var(--type-small);
-  letter-spacing: var(--serif-letterspacing);
-  margin-bottom: var(--tiny-space);
-}
-
 p {
   color: var(--darkest-grey);
   font-family: var(--sans-serif);
@@ -109,8 +73,8 @@ a {
 }
 
 li {
-  font-family: var(--serif);
-  font-size: var(--type-medium);
+  font-family: var(--product-name-font);
+  font-size: var(--type-x-small);
 }
 
 body {
