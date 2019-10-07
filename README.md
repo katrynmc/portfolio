@@ -1,7 +1,7 @@
 ## Start local server
-`yarn install`
+`npm install`
 
-DEV: `yarn start-dev`
-Create assets for Prod: `yarn run build`
+DEV: `npm run start-dev`
+Create assets for Prod: `npm run build`
 
 [http://localhost:8080/](http://localhost:8080/)
