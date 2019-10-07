@@ -6,10 +6,10 @@ import {
 
 import "Styles/home/home.css";
 
-import ArtShow from "components/art/art_show";
-import Home from "components/home/home";
-import EngineeringSection from "components/engineering/engineering_section";
 import ArtSection from "components/art/art_index";
+import ArtShow from "components/art/art_show";
+import EngineeringSection from "components/engineering/engineering_section";
+import Home from "components/home/home";
 
 const Header = () => (
   <Router>
