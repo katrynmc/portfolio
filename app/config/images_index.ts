@@ -9,7 +9,7 @@ import PARADE from "config/portfolio_data/parade";
 import PLEATS_STUDY from "config/portfolio_data/pleats_study";
 import SKETCHBOOK from "config/portfolio_data/sketchbook";
 
-interface PortfolioEntry {
+export interface PortfolioEntry {
   additionalImages: string[];
   blurredIndex: string;
   categories: string[];
@@ -144,5 +144,4 @@ const PORTFOLIO: PortfolioEntry[] = [
   SKETCHBOOK,
 ];
 
-export { PortfolioEntry };
 export default PORTFOLIO;
