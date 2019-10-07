@@ -4,21 +4,21 @@ import linePainting from "assets/images/knitpaint.png";
 
 import "assets/styles/home/home";
 
-function Home() {
+function Home(): React.ReactElement {
   return (
     <div className="home">
       <h2 className="name">KATRYN McINTOSH</h2>
       <div className="painting-left">
-        <img src={linePainting} />
+        <img alt="" src={linePainting} />
       </div>
       <div className="painting-right">
-        <img src={linePainting} />
+        <img alt="" src={linePainting} />
       </div>
 
       <div className="full-width focus-panel">
         <div className="motivation">
           <h1 className="focus-heading">Art & Engineering</h1>
-          I'm passionate about building inspiring (and maintainable!) interfaces
+          I&apos;m passionate about building inspiring (and maintainable!) interfaces
           and experiences with great people. I value engagement with inclusive
           teams and believe that both art and technology have the potential to
           enrich peoples lives.

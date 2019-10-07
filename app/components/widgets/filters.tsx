@@ -1,6 +1,6 @@
 import React from "react";
 
-const Filters = () => {
+const Filters = (): React.ReactElement => {
   return (
     <div className="sidebar">
       <ul className="filters">

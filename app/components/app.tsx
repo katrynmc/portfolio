@@ -5,7 +5,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Home from "components/home/home";
 import Footer from "components/widgets/footer";
 
-function App() {
+function App(): React.ReactElement {
   return (
     <div id="app" className="portfolio-site">
       <main>
