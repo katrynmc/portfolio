@@ -1,15 +1,31 @@
-import HUPPAH from "Config/portfolio_data/huppah";
-import SKETCHBOOK from "Config/portfolio_data/sketchbook";
-import PARADE from "Config/portfolio_data/parade";
-import EYES from "Config/portfolio_data/eyes";
-import KNIT_PARADE from "Config/portfolio_data/knit_parade";
-import PLEATS_STUDY from "Config/portfolio_data/pleats_study";
-import LANDSCAPE from "Config/portfolio_data/landscape";
-import KNIT_GRID from "Config/portfolio_data/knit_grid";
-import CIRCUITS from "Config/portfolio_data/circuits";
-import CATS from "Config/portfolio_data/cats";
+import HUPPAH from "config/portfolio_data/huppah";
+import SKETCHBOOK from "config/portfolio_data/sketchbook";
+import PARADE from "config/portfolio_data/parade";
+import EYES from "config/portfolio_data/eyes";
+import KNIT_PARADE from "config/portfolio_data/knit_parade";
+import PLEATS_STUDY from "config/portfolio_data/pleats_study";
+import LANDSCAPE from "config/portfolio_data/landscape";
+import KNIT_GRID from "config/portfolio_data/knit_grid";
+import CIRCUITS from "config/portfolio_data/circuits";
+import CATS from "config/portfolio_data/cats";
 
-const PORTFOLIO = [
+type PortfolioEntry = {
+  title: string;
+  blurredIndex: string;
+  indexAltText: string;
+  inFocusIndex: string;
+  largeAsset: string;
+  additionalImages: Array<string>;
+  year: string;
+  description: string;
+  tags: Array<string>;
+  medium: string,
+  categories: Array<string>,
+  size: string,
+  slug: string,
+};
+
+const PORTFOLIO: Array<PortfolioEntry> = [
   EYES,
   KNIT_PARADE,
   PLEATS_STUDY,
@@ -128,4 +144,5 @@ const PORTFOLIO = [
   SKETCHBOOK,
 ];
 
+export { PortfolioEntry };
 export default PORTFOLIO;

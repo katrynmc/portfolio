@@ -1,17 +1,15 @@
 import React from "react";
 import {
-  Link,
-  NavLink,
   BrowserRouter as Router,
   Route,
 } from "react-router-dom";
 
 import "Styles/home/home.css";
 
-import ArtShow from "Components/art/art_show_component";
-import Home from "Components/home/home_component";
-import EngineeringSection from "Components/engineering/engineering_section_component";
-import ArtSection from "Components/art/art_index_component";
+import ArtShow from "components/art/art_show";
+import Home from "components/home/home";
+import EngineeringSection from "components/engineering/engineering_section";
+import ArtSection from "components/art/art_index";
 
 const Header = () => (
   <Router>

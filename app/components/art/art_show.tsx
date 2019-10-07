@@ -1,13 +1,18 @@
 import React from "react";
+import { RouteComponentProps } from "react-router-dom";
 
 import { propEq, find, join } from "ramda";
-import PORTFOLIO from "Config/images_index";
+import PORTFOLIO from "config/images_index";
 
-const findImage = imageSlug => {
+type ImageParams = {
+  image: string;
+};
+
+const findImage = (imageSlug: string) => {
   return find(propEq("slug", imageSlug))(PORTFOLIO);
 };
 
-const ArtShow = ({ match }) => {
+const ArtShow = ({ match }: RouteComponentProps<ImageParams>) => {
   const image = findImage(match.params.image);
   const categories = join(" | ", image.categories);
 

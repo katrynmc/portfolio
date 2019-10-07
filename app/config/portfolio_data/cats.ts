@@ -1,4 +1,6 @@
-const CATS = {
+import { PortfolioEntry } from "config/images_index";
+
+const CATS: PortfolioEntry = {
   title: "Cats",
   blurredIndex: require("Images/portfolio_index/cats.png"),
   indexAltText: "Detail of Cats, Machine Knit",

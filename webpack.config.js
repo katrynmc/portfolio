@@ -19,30 +19,20 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.(j|t)sx?$/,
-        include: [path.resolve(__dirname, "app")],
+        test: /\.ts(x?)$/,
         exclude: /node_modules/,
         use: [
-          {
-            loader: "babel-loader",
-            options: {
-              cacheDirectory: true,
-              babelrc: false,
-              presets: [
-                [
-                  "@babel/preset-env",
-                  { targets: { browsers: "last 2 versions" } }
-                ],
-                "@babel/preset-react"
-              ],
-              plugins: [
-                "react-hot-loader/babel"
-              ]
+            {
+                loader: "ts-loader"
             }
-          }
         ]
       },
-
+      // All output '.js' files will have any sourcemaps re-processed by 'source-map-loader'.
+      {
+          enforce: "pre",
+          test: /\.js$/,
+          loader: "source-map-loader"
+      },
       {
         test: /\.(png|jpg)$/,
         loader: "file-loader?name=img/img-[hash:6].[ext]"
@@ -69,11 +59,9 @@ module.exports = {
   },
   resolve: {
     extensions: [".js", ".jsx", ".ts", ".tsx", ".css"],
-    alias: {
-      Images: path.resolve(__dirname, "app/assets/images"),
-      Config: path.resolve(__dirname, "app/config"),
-      Components: path.resolve(__dirname, "app/components"),
-      Styles: path.resolve(__dirname, "app/assets/styles")
-    }
+    modules: [
+      path.resolve(__dirname, "app"),
+      path.resolve(__dirname, "node_modules")
+    ],
   }
 };

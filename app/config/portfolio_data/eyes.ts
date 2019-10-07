@@ -1,4 +1,6 @@
-const EYES = {
+import { PortfolioEntry } from "config/images_index";
+
+const EYES: PortfolioEntry = {
   title: "Eyes",
   blurredIndex: require("Images/portfolio_index/eyes.png"),
   indexAltText: "Detail of Eyes, Digital Repeat",

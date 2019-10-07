@@ -1,4 +1,6 @@
-const PARADE = {
+import { PortfolioEntry } from "config/images_index";
+
+const PARADE: PortfolioEntry = {
   title: "Parade",
   blurredIndex: require("Images/portfolio_index/parade.png"),
   indexAltText: "Detail of Parade, Digital Repeat",

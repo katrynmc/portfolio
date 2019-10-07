@@ -1,4 +1,6 @@
-const HUPPAH = {
+import { PortfolioEntry } from "config/images_index";
+
+const HUPPAH: PortfolioEntry = {
   title: "Huppah",
   blurredIndex: require("Images/portfolio_index/huppah.png"),
   indexAltText: "Detail of Huppah, Machine Knit & Wood Structure",

@@ -1,4 +1,6 @@
-const KNIT_PARADE = {
+import { PortfolioEntry } from "config/images_index";
+
+const KNIT_PARADE: PortfolioEntry = {
   title: "Knit Parade",
   blurredIndex: require("Images/portfolio_index/knit_parade.png"),
   indexAltText: "Detail of Knit Parade, Digital Repeat",

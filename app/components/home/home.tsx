@@ -2,7 +2,7 @@ import React from "react";
 
 const linePainting = require("../../assets/images/knitpaint.png");
 
-import "Styles/home/home.css";
+import "assets/styles/home/home";
 
 function Home() {
   return (
