@@ -1,4 +1,6 @@
-const LANDSCAPE = {
+import { PortfolioEntry } from "config/images_index";
+
+const LANDSCAPE: PortfolioEntry = {
   title: "Landscape",
   blurredIndex: require("Images/portfolio_index/landscape.png"),
   indexAltText: "Detail of Landscape, Machine Knit",

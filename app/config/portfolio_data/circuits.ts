@@ -1,4 +1,6 @@
-const CIRCUITS = {
+import { PortfolioEntry } from "config/images_index";
+
+const CIRCUITS: PortfolioEntry = {
   title: "Circuits",
   blurredIndex: require("Images/portfolio_index/circuits.png"),
   indexAltText: "Detail of Circuits Machine Knit",

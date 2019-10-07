@@ -1,4 +1,6 @@
-const PLEATS_STUDY = {
+import { PortfolioEntry } from "config/images_index";
+
+const PLEATS_STUDY: PortfolioEntry = {
   title: "Study in Pleats",
   blurredIndex: require("Images/portfolio_index/fatguy.png"),
   indexAltText: "Detail of Pleats Study, Machine Knit",

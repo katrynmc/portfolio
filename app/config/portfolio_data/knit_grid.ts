@@ -1,4 +1,6 @@
-const KNIT_GRID = {
+import { PortfolioEntry } from "config/images_index";
+
+const KNIT_GRID: PortfolioEntry = {
   title: "Knit Grid",
   blurredIndex: require("Images/portfolio_index/knitgrid.png"),
   indexAltText: "Detail of Knit Grid, Machine Knit",

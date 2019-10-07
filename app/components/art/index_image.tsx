@@ -1,8 +1,18 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-class IndexImage extends React.Component {
-  constructor(props) {
+import { PortfolioEntry } from "config/images_index";
+
+type IndexImageProps = {
+  image: PortfolioEntry;
+};
+
+type IndexImageState = {
+  isHovered: boolean;
+};
+
+class IndexImage extends React.Component<IndexImageProps, IndexImageState> {
+  constructor(props: IndexImageProps) {
     super(props);
     this.state = {
       isHovered: false,

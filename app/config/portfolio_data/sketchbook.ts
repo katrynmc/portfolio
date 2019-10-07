@@ -1,4 +1,6 @@
-const SKETCHBOOK = {
+import { PortfolioEntry } from "config/images_index";
+
+const SKETCHBOOK: PortfolioEntry = {
   title: "Sketchbook",
   blurredIndex: require("Images/portfolio_index/sketch.png"),
   indexAltText: "Detail from sketchbook, Mixed Media Collage",
