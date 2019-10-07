@@ -4,10 +4,12 @@
   "description": "A portfolio site of art and a front end development showpiece.",
   "main": "index.js",
   "scripts": {
-    "start": "NODE_ENV=production node app.js",
+    "build": "./node_modules/.bin/webpack --config webpack.config.js",
+    "lint": "tslint --project '.'",
+    "lint-fix": "tslint --project '.' --fix",
     "pretty": "prettier --trailing-comma es5 --write --jsx-bracket-same-line 'app{/**/*.js,/**/*.jsx}'",
     "start-dev": "NODE_ENV=development webpack-dev-server --hot --mode development",
-    "build": "./node_modules/.bin/webpack --config webpack.config.js"
+    "start": "NODE_ENV=production node app.js"
   },
   "keywords": [
     "react",
@@ -38,6 +40,7 @@
     "source-map-loader": "^0.2.4",
     "style-loader": "^1.0.0",
     "ts-loader": "^6.2.0",
+    "tslint": "^5.20.0",
     "typescript": "^3.6.3",
     "url-loader": "^2.2.0",
     "webpack": "^4.41.0",

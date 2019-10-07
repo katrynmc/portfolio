@@ -3,13 +3,13 @@ import { Link } from "react-router-dom";
 
 import { PortfolioEntry } from "config/images_index";
 
-type IndexImageProps = {
+interface IndexImageProps {
   image: PortfolioEntry;
-};
+}
 
-type IndexImageState = {
+interface IndexImageState {
   isHovered: boolean;
-};
+}
 
 class IndexImage extends React.Component<IndexImageProps, IndexImageState> {
   constructor(props: IndexImageProps) {
@@ -21,13 +21,13 @@ class IndexImage extends React.Component<IndexImageProps, IndexImageState> {
     this.handleHover = this.handleHover.bind(this);
   }
 
-  handleHover() {
-    this.setState(prevState => ({
+  public handleHover() {
+    this.setState((prevState) => ({
       isHovered: !prevState.isHovered,
     }));
   }
 
-  render() {
+  public render() {
     const { image } = this.props;
 
     return (

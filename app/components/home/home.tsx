@@ -1,6 +1,6 @@
 import React from "react";
 
-const linePainting = require("../../assets/images/knitpaint.png");
+import linePainting from "assets/images/knitpaint.png";
 
 import "assets/styles/home/home";
 

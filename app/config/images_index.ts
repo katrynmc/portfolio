@@ -1,31 +1,31 @@
-import HUPPAH from "config/portfolio_data/huppah";
-import SKETCHBOOK from "config/portfolio_data/sketchbook";
-import PARADE from "config/portfolio_data/parade";
-import EYES from "config/portfolio_data/eyes";
-import KNIT_PARADE from "config/portfolio_data/knit_parade";
-import PLEATS_STUDY from "config/portfolio_data/pleats_study";
-import LANDSCAPE from "config/portfolio_data/landscape";
-import KNIT_GRID from "config/portfolio_data/knit_grid";
-import CIRCUITS from "config/portfolio_data/circuits";
 import CATS from "config/portfolio_data/cats";
+import CIRCUITS from "config/portfolio_data/circuits";
+import EYES from "config/portfolio_data/eyes";
+import HUPPAH from "config/portfolio_data/huppah";
+import KNIT_GRID from "config/portfolio_data/knit_grid";
+import KNIT_PARADE from "config/portfolio_data/knit_parade";
+import LANDSCAPE from "config/portfolio_data/landscape";
+import PARADE from "config/portfolio_data/parade";
+import PLEATS_STUDY from "config/portfolio_data/pleats_study";
+import SKETCHBOOK from "config/portfolio_data/sketchbook";
 
-type PortfolioEntry = {
-  title: string;
+interface PortfolioEntry {
+  additionalImages: string[];
   blurredIndex: string;
+  categories: string[];
+  description: string;
   indexAltText: string;
   inFocusIndex: string;
   largeAsset: string;
-  additionalImages: Array<string>;
+  medium: string;
+  size: string;
+  slug: string;
+  tags: string[];
+  title: string;
   year: string;
-  description: string;
-  tags: Array<string>;
-  medium: string,
-  categories: Array<string>,
-  size: string,
-  slug: string,
-};
+}
 
-const PORTFOLIO: Array<PortfolioEntry> = [
+const PORTFOLIO: PortfolioEntry[] = [
   EYES,
   KNIT_PARADE,
   PLEATS_STUDY,
@@ -34,64 +34,64 @@ const PORTFOLIO: Array<PortfolioEntry> = [
   CATS,
   LANDSCAPE,
   {
-    title: "Knit Paint",
+    additionalImages: [],
     blurredIndex: require("Images/portfolio_index/knitpaint.png"),
+    categories: ["PAINTING", "2D"],
+    description: "",
     indexAltText: "Detail of Knit Paint, Oil Painting",
     inFocusIndex: require("Images/portfolio_index/knitpaint_focus.png"),
     largeAsset: require("Images/show/knitpaint.png"),
-    additionalImages: [],
-    year: "2007",
-    description: "",
-    tags: [],
     medium: "Oil paint on panel",
-    categories: ["PAINTING", "2D"],
     size: "3ft x 5ft",
     slug: "knit-paint",
+    tags: [],
+    title: "Knit Paint",
+    year: "2007",
   },
   {
-    title: "Drawer of Found Objects",
+    additionalImages: [],
     blurredIndex: require("Images/portfolio_index/drawer1.png"),
+    categories: ["PAINTING", "2D"],
+    description: "",
     indexAltText: "Detail of Found Object Still Life, Guoache",
     inFocusIndex: require("Images/portfolio_index/drawer1_focus.png"),
     largeAsset: require("Images/show/drawer1.png"),
-    additionalImages: [],
-    year: "2006",
-    description: "",
-    tags: [],
     medium: "Guoache on paper",
-    categories: ["PAINTING", "2D"],
     size: "8in x 10in",
     slug: "drawer-1",
+    tags: [],
+    title: "Drawer of Found Objects",
+    year: "2006",
   },
   {
-    title: "Scene from the Woods",
+    additionalImages: [],
     blurredIndex: require("Images/portfolio_index/screenprint.png"),
+    categories: ["SCREENPRINTING", "2D"],
+    description: "",
     indexAltText: "Detail of Scene from The Woods, Screenprint",
     inFocusIndex: require("Images/portfolio_index/screenprint_focus.png"),
     largeAsset: require("Images/show/screenprint.png"),
-    additionalImages: [],
-    year: "2007",
-    description: "",
-    tags: [],
     medium: "Screenprint, gold ink on paper",
-    categories: ["SCREENPRINTING", "2D"],
     size: "22in x 30in",
     slug: "screenprint",
+    tags: [],
+    title: "Scene from the Woods",
+    year: "2007",
   },
   {
-    title: "Brain Moth",
+    additionalImages: [],
     blurredIndex: require("Images/portfolio_index/brainmoth.png"),
+    categories: ["DIGITAL REPEAT", "2D"],
+    description: "",
     indexAltText: "Detail of Abstract Brain-like Pattern, Digital Repeat",
     inFocusIndex: require("Images/portfolio_index/brainmoth_focus.png"),
     largeAsset: require("Images/show/brainmoth.png"),
-    additionalImages: [],
-    year: "2009",
-    description: "",
-    tags: [],
     medium: "",
-    categories: ["DIGITAL REPEAT", "2D"],
     size: "",
     slug: "brain-moth",
+    tags: [],
+    title: "Brain Moth",
+    year: "2009",
   },
   // {
   //   title: 'Collected Stones',
@@ -109,20 +109,19 @@ const PORTFOLIO: Array<PortfolioEntry> = [
   //   slug: 'stones'
   // },
   {
-    title: "Balloon Skull Installation",
+    additionalImages: [],
     blurredIndex: require("Images/portfolio_index/skull.png"),
-    indexAltText:
-      "Detail of Balloon Skull Installation, Mixed Media Installation",
+    categories: ["INSTALLATION", "3D"],
+    description: "",
+    indexAltText: "Detail of Balloon Skull Installation, Mixed Media Installation",
     inFocusIndex: require("Images/portfolio_index/skull_focus.png"),
     largeAsset: require("Images/show/skull.jpg"),
-    additionalImages: [],
-    year: "2015",
-    description: "",
-    tags: ["installation"],
     medium: "Balloons, mixed media",
-    categories: ["INSTALLATION", "3D"],
     size: "12ft x 12ft",
     slug: "skull",
+    tags: ["installation"],
+    title: "Balloon Skull Installation",
+    year: "2015",
   },
   // {
   //   title: 'Lolita',
