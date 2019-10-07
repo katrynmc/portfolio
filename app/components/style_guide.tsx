@@ -1,6 +1,6 @@
 import React from "react";
 
-const StyleGuide = () => {
+const StyleGuide = (): React.ReactElement => {
   return (
     <div className="gallery-wrapper">
       <div>Style Guide</div>

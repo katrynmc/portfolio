@@ -113,7 +113,8 @@ const PORTFOLIO: PortfolioEntry[] = [
     blurredIndex: require("Images/portfolio_index/skull.png"),
     categories: ["INSTALLATION", "3D"],
     description: "",
-    indexAltText: "Detail of Balloon Skull Installation, Mixed Media Installation",
+    indexAltText:
+      "Detail of Balloon Skull Installation, Mixed Media Installation",
     inFocusIndex: require("Images/portfolio_index/skull_focus.png"),
     largeAsset: require("Images/show/skull.jpg"),
     medium: "Balloons, mixed media",

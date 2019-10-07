@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "baseUrl": ".",
+    "esModuleInterop": true,
+    "noImplicitAny": true,
+    "outDir": "./build/",
+    "sourceMap": true,
+    "module": "ES2015",
+    "moduleResolution": "Node",
+    "noUnusedLocals": true,
+    "target": "es6",
+    "jsx": "react",
+    "paths": {
+      "components/*": ["./app/components/*"],
+      "styles/*": ["./app/assets/styles/*"],
+      "images/*": ["./app/assets/images/*"],
+      "config/*": ["app/config/*"]
+    },
+    "rootDirs": ["app"],
+    "strict": true
+  },
+}

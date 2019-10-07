@@ -21,13 +21,13 @@ class IndexImage extends React.Component<IndexImageProps, IndexImageState> {
     this.handleHover = this.handleHover.bind(this);
   }
 
-  public handleHover() {
-    this.setState((prevState) => ({
+  public handleHover(): void {
+    this.setState(prevState => ({
       isHovered: !prevState.isHovered,
     }));
   }
 
-  public render() {
+  public render(): React.ReactElement {
     const { image } = this.props;
 
     return (

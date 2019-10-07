@@ -3,5 +3,14 @@ module.exports = {
   "parserOptions": {
       "project": "./tsconfig.json"
   },
-  "extends": ["plugin:@typescript-eslint/recommended"],
+  settings: {
+    react: {
+        version: 'detect',
+    },
+  },
+  "extends": [
+    "plugin:@typescript-eslint/recommended",
+    "plugin:react/recommended",
+    "plugin:jsx-a11y/recommended",
+  ],
 };

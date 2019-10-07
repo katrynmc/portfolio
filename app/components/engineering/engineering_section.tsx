@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const EngineeringSection = () => {
+const EngineeringSection = (): React.ReactElement => {
   return (
     <div>
       <h2>About this site:</h2>
