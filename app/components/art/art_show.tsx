@@ -12,7 +12,9 @@ const findImage = (imageSlug: string): PortfolioEntry => {
   return find(propEq("slug", imageSlug))(PORTFOLIO);
 };
 
-const ArtShow = ({ match }: RouteComponentProps<ImageParams>): React.ReactElement => {
+const ArtShow = ({
+  match,
+}: RouteComponentProps<ImageParams>): React.ReactElement => {
   const image = findImage(match.params.image);
   const categories = join(" | ", image.categories);
 

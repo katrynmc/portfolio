@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat|PT+Serif&display=swap");
+
+.heading {
+  font-family: var(--product-name-font);
+  padding-bottom: calc(1.5 * var(--grid-base));
+}
+
+.background {
+  margin-bottom: 120px;
+  max-width: 600px;
+  text-align: center;
+}
+
+.full-width {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  line-height: 1.8;
+  padding: 50px 45px;
+}
+
+.focus-heading {
+  font-family: var(--product-name-font);
+  font-size: var(--type-x-large);
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.background-panel {
+  grid-row-start: row4;
+  grid-column-start: col2;
+  grid-column-end: col8;
+}
+
+.motivation {
+  max-width: 650px;
+  text-align: center;
+}

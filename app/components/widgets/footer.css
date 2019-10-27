@@ -1,12 +1,9 @@
 .footer {
-  /* background-color: var(--light-grey); */
-  bottom: 0;
   font-size: var(--type-x-small);
-  height: 1.25em;
-  padding: 20px 0px;
-  position: fixed;
+  grid-row: row5;
+  grid-column-start: col2;
+  grid-column-end: col8;
   text-align: center;
-  width: 100vw;
 }
 
 .email {
@@ -17,4 +14,12 @@
 
 .email:hover {
   color: var(--secondary-color-0);
+}
+
+.social-links {
+  color: var(--light-med-grey);
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+  padding: 0 60px;
 }

@@ -13,6 +13,7 @@
     "jsx": "react",
     "paths": {
       "components/*": ["./app/components/*"],
+      "helpers/*": ["./app/helpers/*"],
       "styles/*": ["./app/assets/styles/*"],
       "images/*": ["./app/assets/images/*"],
       "config/*": ["app/config/*"]

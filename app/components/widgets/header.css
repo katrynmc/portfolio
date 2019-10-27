@@ -1,0 +1,21 @@
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-column-start: col1;
+  grid-column-end: row-end;
+  grid-row-start: row1;
+  grid-row-end: row2;
+}
+
+.name {
+  align-items: center;
+  color: #565a6d;
+  font-family: var(--product-name-font);
+  font-size: var(--type-medium);
+  letter-spacing: var(--sans-serif-letterspacing);
+  text-align: center;
+}
+
+.selected {
+}

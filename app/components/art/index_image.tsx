@@ -33,7 +33,8 @@ class IndexImage extends React.Component<IndexImageProps, IndexImageState> {
     return (
       <div
         key={`${image.title}-${this.state.isHovered}wrapper`}
-        className="image-wrapper">
+        className="image-wrapper"
+      >
         <Link to={`/art/${image.slug}`}>
           <img
             className="portfolio-image"
