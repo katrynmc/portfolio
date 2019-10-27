@@ -1,12 +1,17 @@
 import React from "react";
 import { hot } from "react-hot-loader";
-import { BrowserRouter as Router, Route, Switch, NavLink } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Route,
+  Switch,
+  NavLink,
+} from "react-router-dom";
 
 import { ROUTES } from "helpers/routes";
 
-import Home from "components/home/home";
+import Home from "components/section/home/home";
 import Footer from "components/widgets/footer";
-import EngineeringSection from "components/engineering/engineering_section.tsx";
+import EngineeringSection from "components/section/engineering/engineering_section";
 import Header from "components/widgets/header";
 
 import linePainting from "assets/images/knitpaint.png";
@@ -17,8 +22,8 @@ function App(): React.ReactElement {
       <Router>
         <Header />
         <nav className="navigation">
-          <NavLink to={ROUTES.engineering}  activeClassName="selected">
-            Engineering
+          <NavLink to={ROUTES.projects} activeClassName="selected">
+            Projects
           </NavLink>
         </nav>
         <div className="painting-left">
@@ -29,7 +34,7 @@ function App(): React.ReactElement {
         </div>
         <main>
           <Switch>
-            <Route path={ROUTES.engineering}>
+            <Route path={ROUTES.projects}>
               <EngineeringSection />
             </Route>
             <Route path="/">

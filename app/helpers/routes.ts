@@ -1,5 +1,6 @@
 const ROUTES = {
-  engineering: "/engineering",
+  home: "/home",
+  projects: "/projects",
 };
 
 export { ROUTES };

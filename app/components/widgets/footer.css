@@ -3,6 +3,7 @@
   grid-row: row5;
   grid-column-start: col2;
   grid-column-end: col8;
+  padding-top: 20px;
   text-align: center;
 }
 
