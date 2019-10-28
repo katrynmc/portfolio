@@ -2,10 +2,11 @@
 
 @import url("./app/assets/styles/global.css");
 
-@import url("./app/assets/styles/home/home.css");
-@import url("./app/assets/styles/widgets/sidebar.css");
-@import url("./app/assets/styles/widgets/social_bar.css");
-@import url("./app/assets/styles/widgets/header.css");
-@import url("./app/assets/styles/widgets/footer.css");
+@import url("./app/components/section/home/home.css");
+@import url("./app/components/app.css");
+@import url("./app/components/widgets/header.css");
+@import url("./app/components/widgets/footer.css");
 @import url("./app/assets/styles/art/art_index.css");
 @import url("./app/assets/styles/art/art_show.css");
+
+@import url("./app/components/section/section.css");

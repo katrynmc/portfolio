@@ -6,7 +6,7 @@
   "scripts": {
     "build": "./node_modules/.bin/webpack --config webpack.config.js",
     "lint": "eslint --ext .ts --ext .tsx app/",
-    "pretty": "prettier --trailing-comma es5 --write --jsx-bracket-same-line 'app{/**/*.ts,/**/*.tsx}'",
+    "pretty": "prettier --write 'app{/**/*.ts,/**/*.tsx}'",
     "start-dev": "NODE_ENV=development webpack-dev-server --hot --mode development",
     "start": "NODE_ENV=production node app.js"
   },
