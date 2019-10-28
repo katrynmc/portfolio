@@ -1,9 +1,9 @@
 .portfolio-site {
   display: grid;
   grid-template-columns:
-    [col1] 2fr [col2] 140px [col3] 3fr
+    [col1] 1fr [col2] 140px [col3] 3fr
     [col4] 1fr [col5] 1fr
-    [col6] 3fr [col7] 140px [col8] 2fr [col-end];
+    [col6] 3fr [col7] 140px [col8] 1fr [col-end];
   grid-template-rows:
     [row1] 45px
     [row2] 30px
@@ -15,8 +15,7 @@
 }
 
 .navigation {
-  color: #565a6d;
-  background-color: #ffeb3b;
+  color: var(--light-gray);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -24,6 +23,15 @@
   grid-row: row2;
   grid-column-start: col1;
   grid-column-end: row-end;
+}
+
+.selected {
+  text-decoration: underline;
+}
+
+.navigation > a {
+  margin: 0 20px;
+  color: var(--light-gray);
 }
 
 .painting-left {

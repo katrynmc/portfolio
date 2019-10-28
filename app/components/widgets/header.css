@@ -5,7 +5,7 @@ header {
   grid-column-start: col1;
   grid-column-end: row-end;
   grid-row-start: row1;
-  grid-row-end: row2;
+  grid-row-end: row3;
 }
 
 .name {
@@ -15,7 +15,4 @@ header {
   font-size: var(--type-medium);
   letter-spacing: var(--sans-serif-letterspacing);
   text-align: center;
-}
-
-.selected {
 }

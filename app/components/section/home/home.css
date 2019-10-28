@@ -1,39 +1,83 @@
-@import url("https://fonts.googleapis.com/css?family=Montserrat|PT+Serif&display=swap");
-
-.heading {
-  font-family: var(--product-name-font);
-  padding-bottom: calc(1.5 * var(--grid-base));
+@-moz-keyframes spin {
+  100% {
+    -moz-transform: rotate(360deg);
+  }
 }
-
-.background {
-  margin-bottom: 120px;
-  max-width: 600px;
-  text-align: center;
+@-webkit-keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
 }
-
-.full-width {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  line-height: 1.8;
-  padding: 50px 45px;
+@keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
 }
 
 .focus-heading {
-  font-family: var(--product-name-font);
+  grid-column: col1;
   font-size: var(--type-x-large);
-  line-height: 1.2;
-  margin-bottom: 20px;
-}
-
-.background-panel {
-  grid-row-start: row4;
-  grid-column-start: col2;
-  grid-column-end: col8;
+  margin-bottom: 40px;
 }
 
 .motivation {
-  max-width: 650px;
-  text-align: center;
+  display: grid;
+  grid-template-columns: [col1] 2fr [col2] 2fr [col3] 1fr [end];
+  grid-template-rows: [row1] 1fr [row2] 100px [row3] 2fr;
+  height: 100%;
+}
+
+.venn {
+  -webkit-animation: spin 45s linear infinite;
+  -moz-animation: spin 45s linear infinite;
+  animation: spin 45s linear infinite;
+  grid-column-start: col2;
+  grid-column-end: end;
+  grid-row-start: row1;
+  grid-row-end: end;
+  display: grid;
+  grid-template-columns: [col1] 1fr [col3] 120px [col5] 1fr [end];
+  grid-template-rows: [row1] 1fr;
+}
+
+.spin-faster {
+  animation: spin 25s linear infinite;
+}
+
+.summary {
+  grid-column-start: col1;
+  grid-column-end: col2;
+  grid-row-start: row3;
+  margin-right: 40px;
+}
+
+.circle-a {
+  filter: blur(1px);
+  grid-column-start: col1;
+  grid-column-end: col5;
+  grid-row: row1;
+  height: 80%;
+  border-radius: 50%;
+  background-color: rgba(241, 20, 56, 0.57);
+}
+
+.circle-b {
+  filter: blur(2px);
+  grid-row: row1;
+  grid-column-start: col3;
+  grid-column-end: end;
+  height: 80%;
+  border-radius: 50%;
+  background-color: rgba(3, 169, 244, 0.66);
+}
+
+.circle-c {
+  filter: blur(2px);
+  grid-row: row1;
+  grid-column-start: col3;
+  grid-column-end: end;
+  height: 80%;
+  border-radius: 50%;
+  background-color: rgba(180, 244, 3, 0.66);
 }

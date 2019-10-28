@@ -1,8 +1,12 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700|PT+Serif&display=swap");
+
 :root {
   /* re-design vars */
   --grid-base: 10px;
   --body-font: "PT Serif";
   --product-name-font: "Montserrat", sans-serif;
+  --sans-serif: "Montserrat", sans-serif;
+  --serif: "PT Serif";
   --text-dark: #454759;
 
   /* end re-design vars */
@@ -50,15 +54,16 @@ h5 {
 }
 
 body {
-  font-family: var(--sans-serif);
+  background-color: #f5f5f5;
   color: var(--darkest-grey);
+  line-height: 1.5;
 }
 
 p {
   color: var(--darkest-grey);
-  font-family: var(--sans-serif);
-  font-size: var(--type-xx-small);
-  line-height: 1.5;
+  font-family: var(--serif);
+  font-size: var(--type-x-small);
+  line-height: 1.75;
 }
 
 a {
@@ -71,11 +76,6 @@ li {
   font-size: var(--type-x-small);
 }
 
-body {
-  background-color: #f5f5f5;
-  font-family: var(--body-font);
-}
-
 .main-view {
   margin: 0 auto;
   width: 70%;
@@ -86,6 +86,7 @@ main {
   grid-column-end: col8;
   grid-row-start: row3;
   grid-row-end: row5;
+  padding: 40px 70px;
 }
 
 .focus-panel {
