@@ -12,13 +12,13 @@
     "target": "es6",
     "jsx": "react",
     "paths": {
-      "components/*": ["./app/components/*"],
-      "helpers/*": ["./app/helpers/*"],
-      "styles/*": ["./app/assets/styles/*"],
-      "images/*": ["./app/assets/images/*"],
-      "config/*": ["app/config/*"]
+      "components/*": ["./src/components/*"],
+      "helpers/*": ["./src/helpers/*"],
+      "styles/*": ["./src/assets/styles/*"],
+      "images/*": ["./src/assets/images/*"],
+      "config/*": ["./src/config/*"]
     },
-    "rootDirs": ["app"],
+    "rootDirs": ["src"],
     "strict": true
-  },
+  }
 }

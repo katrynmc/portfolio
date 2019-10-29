@@ -1,0 +1,19 @@
+.navigation {
+  color: var(--light-gray);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--product-name-font);
+  grid-row: row2;
+  grid-column-start: col1;
+  grid-column-end: row-end;
+}
+
+.selected {
+  text-decoration: underline;
+}
+
+.navigation > a {
+  margin: 0 20px;
+  color: var(--light-gray);
+}
