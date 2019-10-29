@@ -51,6 +51,12 @@ module.exports = {
             },
           },
         ],
+        include: [path.resolve(__dirname, "src/components")],
+      },
+      {
+        test: /\.css$/,
+        use: ["style-loader", "css-loader"],
+        exclude: [path.resolve(__dirname, "src/components")],
       },
     ],
   },

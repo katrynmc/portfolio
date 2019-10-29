@@ -88,10 +88,3 @@ main {
   grid-row-end: row5;
   padding: 40px 60px;
 }
-
-.focus-panel {
-  grid-row: row3;
-  background-color: #f1f8b4c9;
-  grid-column-start: col1;
-  grid-column-end: col9;
-}

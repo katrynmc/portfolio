@@ -1,26 +1,26 @@
-.section-heading {
+.sectionHeading {
   font-size: var(--type-large);
   margin-bottom: 30px;
 }
 
-.project-heading {
+.projectHeading {
   font-family: var(--product-name-font);
   font-size: var(--type-small);
   margin-bottom: 40px;
 }
 
-.project-image {
+.projectImage {
   height: 500px;
 }
 
-.project-body {
+.projectBody {
   display: flex;
   flex-direction: row;
   background-color: #a5aab5;
   padding: 20px;
 }
 
-.project-sub-section {
+.projectSubSection {
   font-size: var(--type-xx-small);
   font-weight: 600;
 }

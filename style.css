@@ -2,10 +2,5 @@
 
 @import url("./src/assets/styles/global.css");
 
-/* @import url("./src/components/app.css"); */
-/* @import url("./src/components/widgets/header.css"); */
-/* @import url("./src/components/widgets/footer.css"); */
 @import url("./src/assets/styles/art/art_index.css");
 @import url("./src/assets/styles/art/art_show.css");
-
-@import url("./src/components/section/section.css");

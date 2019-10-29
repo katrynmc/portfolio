@@ -16,7 +16,6 @@ function Home(): React.ReactElement {
     <>
       <div className={motivation}>
         <h1 className={focusHeading}>Art & Engineering</h1>
-
         <p className={summary}>
           I&apos;m passionate about building inspiring (and maintainable!)
           interfaces and experiences with great people. I value engagement with
