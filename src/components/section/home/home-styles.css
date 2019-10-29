@@ -15,7 +15,7 @@
   }
 }
 
-.focus-heading {
+.focusHeading {
   grid-column: col1;
   font-size: var(--type-x-large);
   margin-bottom: 40px;
@@ -41,7 +41,7 @@
   grid-template-rows: [row1] 1fr;
 }
 
-.spin-faster {
+.spinFaster {
   animation: spin 25s linear infinite;
 }
 
@@ -52,7 +52,7 @@
   margin-right: 40px;
 }
 
-.circle-a {
+.circleA {
   filter: blur(1px);
   grid-column-start: col1;
   grid-column-end: col5;
@@ -62,7 +62,7 @@
   background-color: rgba(241, 20, 56, 0.57);
 }
 
-.circle-b {
+.circleB {
   filter: blur(2px);
   grid-row: row1;
   grid-column-start: col3;
@@ -72,7 +72,7 @@
   background-color: rgba(3, 169, 244, 0.66);
 }
 
-.circle-c {
+.circleC {
   filter: blur(2px);
   grid-row: row1;
   grid-column-start: col3;

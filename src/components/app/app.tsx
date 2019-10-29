@@ -1,39 +1,28 @@
 import React from "react";
 import { hot } from "react-hot-loader";
-import {
-  BrowserRouter as Router,
-  Route,
-  Switch,
-  // NavLink,
-} from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 import { ROUTES } from "helpers/routes";
 
-import Home from "src/components/section/home/home";
-import Footer from "src/components/page/footer/component";
-import EngineeringSection from "src/components/section/engineering/engineering_section";
-import Background from "src/components/section/background/background_section";
-import Header from "src/components/page/header/component";
+import Home from "components/section/home/home";
+import Footer from "components/page/footer/footer";
+import EngineeringSection from "components/section/engineering/engineering_section";
+import Background from "components/section/background/background_section";
+import Header from "components/page/header/header";
 
 import linePainting from "assets/images/knitpaint.png";
 
+import styles from "./app-styles.css";
+
 function App(): React.ReactElement {
   return (
-    <div className="portfolio-site">
+    <div className={styles.portfolioSite}>
       <Router>
         <Header />
-        {/* <nav className="navigation">
-          <NavLink to={ROUTES.projects} activeClassName="selected">
-            Projects
-          </NavLink>
-          <NavLink to={ROUTES.background} activeClassName="selected">
-            Background
-          </NavLink>
-        </nav> */}
-        <div className="painting-left">
+        <div className={styles.paintingLeft}>
           <img alt="" src={linePainting} />
         </div>
-        <div className="painting-right">
+        <div className={styles.paintingRight}>
           <img alt="" src={linePainting} />
         </div>
         <main>

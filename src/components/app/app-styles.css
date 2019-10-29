@@ -1,4 +1,4 @@
-.portfolio-site {
+.portfolioSite {
   display: grid;
   grid-template-columns:
     [col1] 1fr [col2] 140px [col3] 3fr
@@ -14,27 +14,7 @@
   height: 100vh;
 }
 
-.navigation {
-  color: var(--light-gray);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: var(--product-name-font);
-  grid-row: row2;
-  grid-column-start: col1;
-  grid-column-end: row-end;
-}
-
-.selected {
-  text-decoration: underline;
-}
-
-.navigation > a {
-  margin: 0 20px;
-  color: var(--light-gray);
-}
-
-.painting-left {
+.paintingLeft {
   grid-row-start: row1;
   grid-row-end: row-end;
   grid-column: col1;
@@ -43,7 +23,7 @@
   z-index: -1;
 }
 
-.painting-right {
+.paintingRight {
   grid-row-start: row1;
   grid-row-end: row-end;
   grid-column: col8;

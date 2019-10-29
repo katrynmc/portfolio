@@ -1,25 +1,34 @@
 import React from "react";
 
-import styles from "./home-styles.css";
+import {
+  motivation,
+  focusHeading,
+  summary,
+  venn,
+  circleA,
+  circleB,
+  circleC,
+  spinFaster,
+} from "./home-styles.css";
 
 function Home(): React.ReactElement {
   return (
     <>
-      <div className={styles.motivation}>
-        <h1 className="focus-heading">Art & Engineering</h1>
+      <div className={motivation}>
+        <h1 className={focusHeading}>Art & Engineering</h1>
 
-        <p className="summary">
+        <p className={summary}>
           I&apos;m passionate about building inspiring (and maintainable!)
           interfaces and experiences with great people. I value engagement with
           inclusive teams and believe that both art and technology have the
           potential to enrich peoples lives.
         </p>
-        <div className="venn">
-          <div className="circle-a">&nbsp;</div>
-          <div className="circle-b">&nbsp;</div>
+        <div className={venn}>
+          <div className={circleA}>&nbsp;</div>
+          <div className={circleB}>&nbsp;</div>
         </div>
-        <div className="venn spin-faster">
-          <div className="circle-c">&nbsp;</div>
+        <div className={`${venn} ${spinFaster}`}>
+          <div className={circleC}>&nbsp;</div>
         </div>
       </div>
     </>

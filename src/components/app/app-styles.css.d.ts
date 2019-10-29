@@ -1,9 +1,6 @@
 declare const styles: {
-  readonly "portfolio-site": string;
-  readonly "navigation": string;
-  readonly "selected": string;
-  readonly "painting-left": string;
-  readonly "painting-right": string;
+  readonly portfolioSite: string;
+  readonly paintingLeft: string;
+  readonly paintingRight: string;
 };
 export = styles;
-

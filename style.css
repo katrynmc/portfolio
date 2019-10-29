@@ -1,12 +1,11 @@
-@import url("./app/assets/styles/standards/standardize.css");
+@import url("./src/assets/styles/standards/standardize.css");
 
-@import url("./app/assets/styles/global.css");
+@import url("./src/assets/styles/global.css");
 
-@import url("./app/components/section/home/home.css");
-@import url("./app/components/app.css");
-@import url("./app/components/widgets/header.css");
-@import url("./app/components/widgets/footer.css");
-@import url("./app/assets/styles/art/art_index.css");
-@import url("./app/assets/styles/art/art_show.css");
+/* @import url("./src/components/app.css"); */
+/* @import url("./src/components/widgets/header.css"); */
+/* @import url("./src/components/widgets/footer.css"); */
+@import url("./src/assets/styles/art/art_index.css");
+@import url("./src/assets/styles/art/art_show.css");
 
-@import url("./app/components/section/section.css");
+@import url("./src/components/section/section.css");

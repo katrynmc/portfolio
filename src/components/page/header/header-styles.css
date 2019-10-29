@@ -1,4 +1,4 @@
-header {
+.siteHeader {
   display: flex;
   align-items: center;
   grid-column-start: col2;

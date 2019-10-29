@@ -1,9 +1,11 @@
 import React from "react";
 
+import styles from "./footer-styles.css";
+
 const Footer = (): React.ReactElement => {
   return (
-    <footer className="footer">
-      <ul className="social-links">
+    <footer className={styles.footer}>
+      <ul className={styles.socialLinks}>
         <li>
           <a href="https://github.com/katrynmc">Github</a>
         </li>
@@ -18,7 +20,7 @@ const Footer = (): React.ReactElement => {
         </li>
       </ul>
       <div>
-        <a className="email" href="mailto:katryn.mcintosh@gmail.com">
+        <a className={styles.email} href="mailto:katryn.mcintosh@gmail.com">
           EMAIL ME
         </a>
       </div>
