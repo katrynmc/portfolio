@@ -6,6 +6,7 @@
   grid-row-start: row1;
   grid-row-end: row3;
   padding: 0 60px;
+  border-bottom: 1px dashed #cfcfcf;
 }
 
 .name {

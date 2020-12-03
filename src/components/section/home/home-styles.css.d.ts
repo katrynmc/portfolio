@@ -8,5 +8,6 @@ declare const styles: {
   readonly circleA: string;
   readonly circleB: string;
   readonly circleC: string;
+  readonly home: string;
 };
 export = styles;

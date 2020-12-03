@@ -1,28 +1,39 @@
-.focusHeading {
-  grid-column: col1;
-  font-size: var(--type-x-large);
-  margin-bottom: 40px;
-}
-
 .motivation {
   display: grid;
-  grid-template-columns: [col1] 2fr [col2] 2fr [col3] 1fr [end];
+  grid-template-columns: [col1] 2fr [col2] 3fr [end];
   grid-template-rows: [row1] 1fr [row2] 100px [row3] 2fr;
   height: 100%;
 }
 
+.focusHeading {
+  grid-column: col1;
+  grid-row-start: row1;
+  font-size: var(--type-x-large);
+  margin-bottom: 40px;
+}
+
 .venn {
-  grid-column-start: col2;
+  grid-column-start: col1;
   grid-column-end: end;
   grid-row-start: row1;
   grid-row-end: end;
   display: grid;
-  grid-template-columns: [col1] 1fr [col3] 120px [col5] 1fr [end];
+  grid-template-columns: [col0] 1fr [col1] 1fr [col3] 220px [col5] 1fr [end];
   grid-template-rows: [row1] 1fr;
+  align-items: flex-end;
 }
 
-.spinFaster {
-  animation: spin 25s linear infinite;
+.venn:nth-of-type(1) {
+  position: relative;
+  left: 50px;
+}
+.venn:nth-of-type(2) {
+  position: relative;
+  left: 100px;
+}
+.venn:nth-of-type(3) {
+  position: relative;
+  left: 150px;
 }
 
 .summary {
@@ -33,21 +44,66 @@
 }
 
 .circleA {
-  filter: blur(1px);
-  grid-column-start: col1;
-  grid-column-end: col5;
+  filter: blur(2px);
   grid-row: row1;
-  height: 80%;
+  grid-column-start: col0;
+  grid-column-end: col3;
+  height: 100%;
+  width: 60%;
   border-radius: 50%;
-  background-color: rgba(241, 20, 56, 0.57);
+  border: 5px solid rgba(3, 169, 244, 0.16);
+  position: relative;
+  left: 10px;
+}
+
+.circleA:nth-of-type(1) {
+  position: relative;
+  left: 10px;
+}
+
+.circleA:nth-of-type(2) {
+  position: relative;
+  left: 20px;
+}
+
+.circleA:nth-of-type(3) {
+  position: relative;
+  left: 30px;
+}
+
+.circleA:nth-of-type(4) {
+  position: relative;
+  left: 40px;
+}
+
+.circleA:nth-of-type(5) {
+  position: relative;
+  left: 50px;
+}
+
+.circleA:nth-of-type(6) {
+  position: relative;
+  left: 60px;
 }
 
 .circleB {
   filter: blur(2px);
   grid-row: row1;
-  grid-column-start: col3;
-  grid-column-end: end;
-  height: 80%;
+  grid-column-start: col0;
+  grid-column-end: col3;
+  height: 100%;
+  width: 60%;
   border-radius: 50%;
-  background-color: rgba(3, 169, 244, 0.66);
+  border: 5px solid rgba(3, 169, 244, 0.16);
+}
+
+.circleC {
+  filter: blur(2px);
+  grid-row: row1;
+  grid-column-start: col0;
+  grid-column-end: col3;
+  height: 100%;
+  width: 60%;
+  border-radius: 50%;
+  border: 5px solid rgba(3, 169, 244, 0.16);
 }
