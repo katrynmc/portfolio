@@ -7,8 +7,6 @@ import {
   venn,
   circleA,
   circleB,
-  circleC,
-  spinFaster,
 } from "./home-styles.css";
 
 function Home(): React.ReactElement {
@@ -25,9 +23,6 @@ function Home(): React.ReactElement {
         <div className={venn}>
           <div className={circleA}>&nbsp;</div>
           <div className={circleB}>&nbsp;</div>
-        </div>
-        <div className={`${venn} ${spinFaster}`}>
-          <div className={circleC}>&nbsp;</div>
         </div>
       </div>
     </>

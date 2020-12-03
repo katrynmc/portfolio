@@ -1,20 +1,3 @@
-@-moz-keyframes spin {
-  100% {
-    -moz-transform: rotate(360deg);
-  }
-}
-@-webkit-keyframes spin {
-  100% {
-    -webkit-transform: rotate(360deg);
-  }
-}
-@keyframes spin {
-  100% {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
-}
-
 .focusHeading {
   grid-column: col1;
   font-size: var(--type-x-large);
@@ -29,9 +12,6 @@
 }
 
 .venn {
-  -webkit-animation: spin 45s linear infinite;
-  -moz-animation: spin 45s linear infinite;
-  animation: spin 45s linear infinite;
   grid-column-start: col2;
   grid-column-end: end;
   grid-row-start: row1;
@@ -70,14 +50,4 @@
   height: 80%;
   border-radius: 50%;
   background-color: rgba(3, 169, 244, 0.66);
-}
-
-.circleC {
-  filter: blur(2px);
-  grid-row: row1;
-  grid-column-start: col3;
-  grid-column-end: end;
-  height: 80%;
-  border-radius: 50%;
-  background-color: rgba(180, 244, 3, 0.66);
 }
