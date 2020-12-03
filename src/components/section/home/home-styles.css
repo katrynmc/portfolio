@@ -46,8 +46,8 @@
 .circleA {
   filter: blur(2px);
   grid-row: row1;
-  grid-column-start: col0;
-  grid-column-end: col3;
+  grid-column-start: col1;
+  grid-column-end: col5;
   height: 100%;
   width: 60%;
   border-radius: 50%;
