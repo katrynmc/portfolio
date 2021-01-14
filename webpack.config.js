@@ -5,6 +5,9 @@ const webpack = require("webpack");
 
 const ENV = process.env.NODE_ENV || "development";
 
+const cssModuleName =
+  ENV === "development" ? "[path][name]__[local]" : "[hash:base64]";
+
 module.exports = {
   entry: ["./src/index"],
 
@@ -47,7 +50,10 @@ module.exports = {
             loader: "css-loader",
             options: {
               importLoaders: 1,
-              modules: true,
+
+              modules: {
+                localIdentName: cssModuleName,
+              },
             },
           },
         ],
