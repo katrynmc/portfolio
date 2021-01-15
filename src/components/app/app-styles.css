@@ -11,7 +11,7 @@
     [row4] 2fr
     [row5] 120px
     [row-end];
-  height: 100vh;
+  height: 100%;
 }
 
 .paintingLeft {
