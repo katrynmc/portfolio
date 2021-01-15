@@ -68,7 +68,7 @@ body {
 p {
   color: var(--darkest-grey);
   font-family: var(--serif);
-  font-size: var(--type-x-small);
+  font-size: var(--type-large);
   line-height: 1.75;
 }
 
@@ -93,4 +93,10 @@ main {
   grid-row-start: row3;
   grid-row-end: row5;
   padding: 40px 60px;
+}
+
+@media only screen and (min-width: 1024px) {
+  p {
+    font-size: var(--type-x-small);
+  }
 }
