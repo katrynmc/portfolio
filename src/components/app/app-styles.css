@@ -15,20 +15,32 @@
 }
 
 .paintingLeft {
-  grid-row-start: row1;
-  grid-row-end: row-end;
-  grid-column: col1;
-  filter: grayscale(100%);
-  overflow: hidden;
-  z-index: -1;
+  display: none;
 }
 
 .paintingRight {
-  grid-row-start: row1;
-  grid-row-end: row-end;
-  grid-column: col8;
-  filter: grayscale(100%);
-  overflow: hidden;
-  transform: scaleX(-1);
-  z-index: -1;
+  display: none;
+}
+
+@media only screen and (min-width: 1024px) {
+  .paintingLeft {
+    display: inline;
+    grid-row-start: row1;
+    grid-row-end: row-end;
+    grid-column: col1;
+    filter: grayscale(100%);
+    overflow: hidden;
+    z-index: -1;
+  }
+
+  .paintingRight {
+    display: inline;
+    grid-row-start: row1;
+    grid-row-end: row-end;
+    grid-column: col8;
+    filter: grayscale(100%);
+    overflow: hidden;
+    transform: scaleX(-1);
+    z-index: -1;
+  }
 }
