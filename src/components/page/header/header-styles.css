@@ -6,17 +6,20 @@
   grid-column-end: col8;
   grid-row-start: row1;
   grid-row-end: row3;
-  border-bottom: 1px dashed #cfcfcf;
 }
 
 .name {
   color: #565a6d;
   font-family: var(--product-name-font);
-  font-size: 3rem;
+  font-size: 3.5rem;
   letter-spacing: var(--sans-serif-letterspacing);
 }
 
 @media only screen and (min-width: 1024px) {
+  .siteHeader {
+    border-bottom: 1px dashed #cfcfcf;
+  }
+
   .name {
     font-size: 1.5rem;
   }
