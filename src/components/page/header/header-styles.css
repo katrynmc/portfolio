@@ -1,19 +1,23 @@
 .siteHeader {
   display: flex;
   align-items: center;
+  justify-content: center;
   grid-column-start: col2;
   grid-column-end: col8;
   grid-row-start: row1;
   grid-row-end: row3;
-  padding: 0 60px;
   border-bottom: 1px dashed #cfcfcf;
 }
 
 .name {
-  align-items: center;
   color: #565a6d;
   font-family: var(--product-name-font);
-  font-size: var(--type-medium);
+  font-size: 3rem;
   letter-spacing: var(--sans-serif-letterspacing);
-  text-align: center;
+}
+
+@media only screen and (min-width: 1024px) {
+  .name {
+    font-size: 1.5rem;
+  }
 }
